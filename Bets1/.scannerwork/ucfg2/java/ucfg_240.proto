@@ -1,0 +1,64 @@
+
+^businessLogic.BLFacadeImplementation#lortuMugimenduak(Ljava/lang/String;)Ljava/util/ArrayList;X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java§ §(*"startingBlock*¢
+startingBlockX
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java§* §(6¢
+Ÿ
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java¦ ¦(
+
+%4"
+__annotate*
+java.lang.Override*
+
+usrjava.lang.StringŒ
+‰
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java§2 §(5
+usrjava.lang.String"__annotation*
+
+%4*
+1*Ã
+
+1X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java¨ ¨((‘Ž
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java¨ ¨(&
+%0dataAccess.DataAccess"dataAccess.DataAccess£
+ 
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java¨ ¨((
+%1"dataAccess.DataAccess#<init>()V*
+
+%0dataAccess.DataAccess¦
+£
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java¨ ¨()"
+	dbmanagerdataAccess.DataAccess"__id*
+
+%0dataAccess.DataAccess°­
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java© ©(5
+%2java.util.ArrayList"OdataAccess.DataAccess#lortuMugimenduak(Ljava/lang/String;)Ljava/util/ArrayList;*$
+"
+	dbmanagerdataAccess.DataAccess*
+
+usrjava.lang.String2$lortuMugimenduak(Ljava/lang/String;)š
+—
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java© ©(6
+ujava.util.ArrayList"__id*
+
+%2java.util.ArrayList¸µ
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaª ª(
+
+%3void"dataAccess.DataAccess#close()V*$
+"
+	dbmanagerdataAccess.DataAccess2close()"v
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java¬ ¬(
+
+ujava.util.ArrayList:
+usrjava.lang.StringB(&
+$businessLogic.BLFacadeImplementation

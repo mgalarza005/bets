@@ -358,7 +358,7 @@ public class DataAccess  {
 //		Kuota aux= db.find(Kuota.class, ezabatzekoKuota.getKNumber());
 //		db.remove(aux);
 		db.getTransaction().commit();
-		System.out.println("Kuota ezabatu da.");
+		System.err.println("Kuota ezabatu da.");
 	}
 
 	public boolean diruaNahikorik(String usr, double d, Kuota k) { //Diru nahikorik duen konprobatu, eta badauka kendu egiten zaio

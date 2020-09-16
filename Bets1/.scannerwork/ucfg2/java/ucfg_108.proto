@@ -1,0 +1,53 @@
+
+edataAccess.DataAccess#kuotaSortu(Ljava/lang/String;Ljava/lang/String;Ldomain/Question;)Ldomain/Kuota;I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÉ É("1*½
+
+1I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÌ Ì(ÌÉ
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÌ' Ì(<
+%0java.lang.Integer"6domain.Question#getQuestionNumber()Ljava/lang/Integer;*
+
+gdomain.Question2getQuestionNumber()r
+p
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÌ Ì(>
+q1domain.Question"__id*
+""ïì
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÏ Ï((
+%1domain.Kuota"]domain.Question#addKuota(Ljava/lang/String;Ljava/lang/String;Ldomain/Question;)Ldomain/Kuota;*
+
+q1domain.Question*
+
+emaitzajava.lang.String*
+
+onurajava.lang.String*
+
+gdomain.Question2?addKuota(Ljava/lang/String;Ljava/lang/String;Ldomain/Question;)|
+z
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÏ Ï()
+kdomain.Kuota"__id*
+
+%1domain.Kuotav
+t
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÒ Ò(
+%2java.io.PrintStream"__id*
+""ßÜ
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÒ Ò(+
+
+%3void"0java.io.PrintStream#println(Ljava/lang/String;)V*
+
+%2java.io.PrintStream*
+Kuota sartu da!!!!!2println(Ljava/lang/String;)"`
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÓ Ó(
+
+kdomain.Kuota:
+emaitzajava.lang.String:
+onurajava.lang.String:
+gdomain.QuestionB
+dataAccess.DataAccess

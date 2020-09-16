@@ -1,6 +1,7 @@
 package businessLogic;
 
 import java.util.Vector;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -43,7 +44,7 @@ public interface BLFacade  {
 	 * @param date in which events are retrieved
 	 * @return collection of events
 	 */
-	@WebMethod public Vector<Event> getEvents(Date date);
+	@WebMethod public ArrayList<Event> getEvents(Date date);
 	
 	
 	/**
@@ -65,7 +66,7 @@ public interface BLFacade  {
 	@WebMethod public boolean passOndo(String pass1, String pass2);
 	@WebMethod public boolean izenaOndo (String izena);
 	@WebMethod public boolean workerIzenaOndo(String izena);
-	@WebMethod public void erregistratu(String izena, String pass, String NAN, String korreoa, String KZ, String adina)throws NullPointerException;
+	@WebMethod public void erregistratu(String izena, String pass, String NAN, String korreoa, String KZ, String adina);
 	@WebMethod public boolean gertaeraSortu(String p1, String p2, Date d)throws EventFinished, NullPointerException;
 	@WebMethod public void langileBerriaSortu(String l, String pass);
 	@WebMethod public void emaitzaIpini(String emaitza, Question g);

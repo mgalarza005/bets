@@ -1,0 +1,64 @@
+
+UbusinessLogic.BLFacadeImplementation#kuotakLortu(Ldomain/Question;)Ljava/util/Vector;X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaê ê(!"startingBlock*ú
+startingBlockX
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaê! ê(-ü
+ú
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaè è(
+
+%4"
+__annotate*
+java.lang.Override*
+
+gdomain.Questionâ
+Ü
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaê+ ê(,
+gdomain.Question"__annotation*
+
+%4*
+1*•
+
+1X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaë ë((ëé
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaë ë(&
+%0dataAccess.DataAccess"dataAccess.DataAccess£
+†
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaë ë((
+%1"dataAccess.DataAccess#<init>()V*
+
+%0dataAccess.DataAccess¶
+£
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaë ë()"
+	dbmanagerdataAccess.DataAccess"__id*
+
+%0dataAccess.DataAccessõò
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaí í(,
+%2java.util.Vector"FdataAccess.DataAccess#kuotakLortu(Ldomain/Question;)Ljava/util/Vector;*$
+"
+	dbmanagerdataAccess.DataAccess*
+
+gdomain.Question2kuotakLortu(Ldomain/Question;)î
+ë
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaí í(-
+kjava.util.Vector"__id*
+
+%2java.util.Vector∏µ
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaì ì(
+
+%3void"dataAccess.DataAccess#close()V*$
+"
+	dbmanagerdataAccess.DataAccess2close()"s
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaî î(
+
+kjava.util.Vector:
+gdomain.QuestionB(&
+$businessLogic.BLFacadeImplementation

@@ -300,7 +300,7 @@ public class ApustuAnitzaGUI extends JFrame {
 						label.setText("Apustu anizkoitza gorde da"); 
 						textField_1.setText("");
 						negozioLogika.mugimenduaErabiltzaileariGehituApustuAnitza(usr,d,apustuLista);
-						usr.toString();
+						
 					}else {
 						label.setVisible(true);
 						label.setText("Ez daukazu diru nahikorik");

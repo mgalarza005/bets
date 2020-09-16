@@ -1,0 +1,129 @@
+
+0gui.MainGUI#getLblNewLabel()Ljavax/swing/JLabel;?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.java∏ ∏("3*“
+2?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.java∫# ∫(1„
+‡
+?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.java∫# ∫(H
+%1java.util.ResourceBundle"Pjava.util.ResourceBundle#getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;*"
+java.util.ResourceBundle*
+	Etiquetas˘ˆ
+?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.java∫# ∫(b
+%2java.lang.String"Hjava.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;* 
+
+%1java.util.ResourceBundle*
+SelectOption2getString(Ljava/lang/String;)qo
+?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.java∫ ∫("
+%3javax.swing.JLabel"javax.swing.JLabel∞
+≠
+?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.java∫ ∫(c
+%4".javax.swing.JLabel#<init>(Ljava/lang/String;)V*
+
+%3javax.swing.JLabel*
+
+%2java.lang.Stringç
+ä
+?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.java∫ ∫(c%
+gui.MainGUI"
+jLabelSelectOption"__id*
+
+%3javax.swing.JLabelç
+ä
+?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.javaª ª(
+%5javax.swing.JLabel"__id*'*%
+gui.MainGUI"
+jLabelSelectOption\
+Z
+?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.javaª1 ª(:	
+%6int"__id*
+""ge
+?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.javaª" ª(&
+%7java.awt.Font"java.awt.Font≠
+™
+?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.javaª ª(?
+%8"+java.awt.Font#<init>(Ljava/lang/String;II)V*
+
+%7java.awt.Font*
+
+Tahoma*
+	
+%6int*2œÃ
+?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.javaª ª(@
+
+%9void"0javax.swing.JComponent#setFont(Ljava/awt/Font;)V*
+
+%5javax.swing.JLabel*
+
+%7java.awt.Font2setFont(Ljava/awt/Font;)é
+ã
+?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.javaº º(
+%10javax.swing.JLabel"__id*'*%
+gui.MainGUI"
+jLabelSelectOptionh
+f
+?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.javaº$ º(/
+%11java.awt.Color"__id*
+""·ﬁ
+?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.javaº º(0
+%12void"7javax.swing.JComponent#setForeground(Ljava/awt/Color;)V*
+
+%10javax.swing.JLabel*
+
+%11java.awt.Color2setForeground(Ljava/awt/Color;)é
+ã
+?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.javaΩ Ω(
+%13javax.swing.JLabel"__id*'*%
+gui.MainGUI"
+jLabelSelectOption]
+[
+?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.javaΩ- Ω(B
+
+%14int"__id*
+""∆√
+?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.javaΩ Ω(C
+%15void"-javax.swing.JLabel#setHorizontalAlignment(I)V*
+
+%13javax.swing.JLabel*
+
+
+%14int2setHorizontalAlignment(I)*
+1*‹
+3?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.javaπ π(ç
+ä
+?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.javaπ π(
+%0javax.swing.JLabel"__id*'*%
+gui.MainGUI"
+jLabelSelectOption*
+2
+1*µ
+1?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.javaø	 ø(é
+ã
+?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.javaø	 ø(
+%16javax.swing.JLabel"__id*'*%
+gui.MainGUI"
+jLabelSelectOption"^
+?
+3C:/Users/MIKEL1/git/Bets/Bets1/src/gui/MainGUI.javaø ø(
+
+%16javax.swing.JLabelB
+gui.MainGUI

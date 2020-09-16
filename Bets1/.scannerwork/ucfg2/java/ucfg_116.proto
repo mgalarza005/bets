@@ -1,0 +1,83 @@
+
+JdataAccess.DataAccess#lortuKuotaIrabzalea(Ldomain/Question;)Ldomain/Kuota;I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java© ©(!"6*ï
+3I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java° °(»¸
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java° °(
+%6domain.Kuota")java.util.Vector#get(I)Ljava/lang/Object;*
+
+listaKjava.util.Vector*
+""2get(I)"a
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java° °(
+
+%6domain.Kuota*®
+4I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java¯ ¯(»¸
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java¯ ¯(
+%3domain.Kuota")java.util.Vector#get(I)Ljava/lang/Object;*
+
+listaKjava.util.Vector*
+""2get(I)·´
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java¯ ¯( 
+%4java.lang.String"+domain.Kuota#getEmaitza()Ljava/lang/String;*
+
+%3domain.Kuota2getEmaitza()ÝÚ
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java¯ ¯(-
+%5boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+%4java.lang.String*
+
+emaijava.lang.String2equals(Ljava/lang/Object;)*
+3
+5*ò
+5I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java® ®(™–
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java® ®(	
+%2int"java.util.Vector#size()I*
+
+listaKjava.util.Vector2size()*
+4
+1*Ø
+6I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaª ª(q
+o
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java« «(*
+qdomain.Question"__id*
+""º·
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java¬ ¬(
+%0java.lang.String"-domain.Question#getResult()Ljava/lang/String;*
+
+qdomain.Question2getResult()ˆ
+…
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java¬ ¬(
+emaijava.lang.String"__id*
+
+%0java.lang.Stringº·
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java­ ­($
+%1java.util.Vector"-domain.Question#getKuotak()Ljava/util/Vector;*
+
+qdomain.Question2getKuotak()Š
+‡
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java­ ­(%
+listaKjava.util.Vector"__id*
+
+%1java.util.Vector*
+5*£
+1I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java´	 ´("S
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java´ ´(
+"":
+gdomain.QuestionB
+dataAccess.DataAccess

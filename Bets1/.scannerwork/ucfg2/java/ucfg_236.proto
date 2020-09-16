@@ -1,0 +1,76 @@
+
+WbusinessLogic.BLFacadeImplementation#diruaNahikorik(Ljava/lang/String;DLdomain/Kuota;)ZX
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaÇ Ç("startingBlock* 
+startingBlockX
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaÇ Ç(=¢
+ü
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaÅ Å(
+
+%4"
+__annotate*
+java.lang.Override*
+
+usrjava.lang.Stringå
+â
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaÇ& Ç()
+usrjava.lang.String"__annotation*
+
+%4ú
+ô
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaÅ Å(
+
+%5"
+__annotate*
+java.lang.Override*
+
+kdomain.KuotaÜ
+É
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaÇ; Ç(<
+kdomain.Kuota"__annotation*
+
+%5*
+1*©	
+1X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaÉ É((ëé
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaÉ É(&
+%0dataAccess.DataAccess"dataAccess.DataAccess£
+†
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaÉ É((
+%1"dataAccess.DataAccess#<init>()V*
+
+%0dataAccess.DataAccess¶
+£
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaÉ É()"
+	dbmanagerdataAccess.DataAccess"__id*
+
+%0dataAccess.DataAccess«ƒ
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaÖ Ö(/
+%2boolean"HdataAccess.DataAccess#diruaNahikorik(Ljava/lang/String;DLdomain/Kuota;)Z*$
+"
+	dbmanagerdataAccess.DataAccess*
+
+usrjava.lang.String*
+""*
+
+kdomain.Kuota21diruaNahikorik(Ljava/lang/String;DLdomain/Kuota;)∏µ
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaÜ Ü(
+
+%3void"dataAccess.DataAccess#close()V*$
+"
+	dbmanagerdataAccess.DataAccess2close()"b
+X
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaà à(
+"":
+usrjava.lang.String:
+"":
+kdomain.KuotaB(&
+$businessLogic.BLFacadeImplementation

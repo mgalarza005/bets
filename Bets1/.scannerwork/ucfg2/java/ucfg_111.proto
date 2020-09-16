@@ -1,0 +1,58 @@
+
+HdataAccess.DataAccess#diruaNahikorik(Ljava/lang/String;DLdomain/Kuota;)ZI
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaì ì("3*¶
+2I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaò ò(•’
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaò ò(
+%1double"domain.User#getDirua()D*
+
+udomain.User2
+getDirua()š
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaò ò(
+
+%2void"domain.User#setDirua(D)V*
+
+udomain.User*
+""2setDirua(D)ØÕ
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaó ó(
+
+%3void"5domain.Kuota#setLortutakoEtekina(Ljava/lang/Double;)V*
+
+k1domain.Kuota*
+""2'setLortutakoEtekina(Ljava/lang/Double;)"S
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaö ö(
+""*Î
+3I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaí í(m
+k
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaî î(#
+udomain.User"__id*
+""o
+m
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaï ï($
+k1domain.Kuota"__id*
+""•’
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javañ ñ(
+%0double"domain.User#getDirua()D*
+
+udomain.User2
+getDirua()*
+2
+1*£
+1I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaø
+ ø("S
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaø ø(
+"":
+usrjava.lang.String:
+"":
+kdomain.KuotaB
+dataAccess.DataAccess

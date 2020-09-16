@@ -1,0 +1,72 @@
+
+YbusinessLogic.BLFacadeImplementation#isLoginWorker(Ljava/lang/String;Ljava/lang/String;)ZV
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java_ _("startingBlock*º
+startingBlockV
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java_ _(6ó
+î
+V
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java^ ^(
+%4"
+__annotate*
+	WebMethod*
+
+logjava.lang.Stringä
+á
+V
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java_% _((
+logjava.lang.String"__annotation*
+
+%4ò
+ï
+V
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java^ ^(
+%5"
+__annotate*
+	WebMethod*
+
+passjava.lang.Stringã
+à
+V
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java_1 _(5
+passjava.lang.String"__annotation*
+
+%5*
+1*û	
+1V
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java` `((èå
+V
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java` `(&
+%0dataAccess.DataAccess"dataAccess.DataAccess°
+û
+V
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java` `((
+%1"dataAccess.DataAccess#<init>()V*
+
+%0dataAccess.DataAccess§
+°
+V
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java` `()"
+	dbmanagerdataAccess.DataAccess"__id*
+
+%0dataAccess.DataAccess»≈
+V
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaa a(/
+%2boolean"JdataAccess.DataAccess#isLoginWorker(Ljava/lang/String;Ljava/lang/String;)Z*$
+"
+	dbmanagerdataAccess.DataAccess*
+
+logjava.lang.String*
+
+passjava.lang.String23isLoginWorker(Ljava/lang/String;Ljava/lang/String;)∂≥
+V
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javab b(
+
+%3void"dataAccess.DataAccess#close()V*$
+"
+	dbmanagerdataAccess.DataAccess2close()"`
+V
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javac c(
+"":
+logjava.lang.String:
+passjava.lang.StringB(&
+$businessLogic.BLFacadeImplementation

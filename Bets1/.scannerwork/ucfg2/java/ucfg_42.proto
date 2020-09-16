@@ -1,0 +1,57 @@
+
+)domain.Event#toString()Ljava/lang/String;>
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Event.javak k("1*§	
+1>
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Event.javal	 l(…
+‚
+>
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Event.javal	 l(
+%0java.lang.Integer"__id*!*
+domain.Event"
+eventNumber‡
+„
+>
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Event.javal	 l(
+%1java.lang.String"__concat*
+
+%0java.lang.Integer*
+;„
+
+>
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Event.javal l($
+%2java.lang.String"__id*!*
+domain.Event"
+description™
+–
+>
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Event.javal	 l($
+%3java.lang.String"__concat*
+
+%1java.lang.String*
+
+%2java.lang.String
+
+>
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Event.javal% l(3
+%4java.util.Vector"__id**
+domain.Event"
+	questions°­
+>
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Event.javal% l(>
+%5java.lang.String"-java.util.Vector#toString()Ljava/lang/String;*
+
+%4java.util.Vector2
+toString()™
+–
+>
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Event.javal	 l(>
+%6java.lang.String"__concat*
+
+%3java.lang.String*
+
+%5java.lang.String"Z
+>
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Event.javal l(?
+
+%6java.lang.StringB
+domain.Event

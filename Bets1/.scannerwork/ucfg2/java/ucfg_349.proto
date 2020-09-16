@@ -1,0 +1,24 @@
+
+Fdomain.IntegerAdapter#unmarshal(Ljava/lang/String;)Ljava/lang/Integer;G
+=C:/Users/MIKEL1/git/Bets/Bets1/src/domain/IntegerAdapter.java	 	("1*ß
+1G
+=C:/Users/MIKEL1/git/Bets/Bets1/src/domain/IntegerAdapter.java
+ 
+(¸
+µ
+G
+=C:/Users/MIKEL1/git/Bets/Bets1/src/domain/IntegerAdapter.java
+ 
+("	
+%0int"/java.lang.Integer#parseInt(Ljava/lang/String;)I*"
+java.lang.Integer*
+
+sjava.lang.String"V
+G
+=C:/Users/MIKEL1/git/Bets/Bets1/src/domain/IntegerAdapter.java
+ 
+(#
+	
+%0int:
+sjava.lang.StringB
+domain.IntegerAdapter

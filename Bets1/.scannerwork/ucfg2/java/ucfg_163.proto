@@ -1,0 +1,59 @@
+
+,domain.Question#toString()Ljava/lang/String;C
+7C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Question.java© ©("1*Ö	
+1C
+7C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Question.javaª	 ª(
+
+C
+7C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Question.javaª	 ª(
+%0java.lang.Integer"__id*'*%
+domain.Question"
+questionNumberŒ
+‰
+C
+7C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Question.javaª	 ª(
+%1java.lang.String"__concat*
+
+%0java.lang.Integer*
+;‰
+†
+C
+7C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Question.javaª ª($
+%2java.lang.String"__id*!*
+domain.Question"
+
+question
+›
+C
+7C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Question.javaª	 ª($
+%3java.lang.String"__concat*
+
+%1java.lang.String*
+
+%2java.lang.String‹
+ˆ
+C
+7C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Question.javaª	 ª((
+%4java.lang.String"__concat*
+
+%3java.lang.String*
+;¬
+©
+C
+7C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Question.javaª) ª(C
+%5java.lang.String"-java.lang.Float#toString(F)Ljava/lang/String;*"
+java.lang.Float*
+""
+›
+C
+7C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Question.javaª	 ª(C
+%6java.lang.String"__concat*
+
+%4java.lang.String*
+
+%5java.lang.String"_
+C
+7C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Question.javaª ª(D
+
+%6java.lang.StringB
+domain.Question

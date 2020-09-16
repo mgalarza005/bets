@@ -276,7 +276,7 @@ public class ApustuaEginGUI extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				try {
 				BLFacade negozioLogika=MainGUI.getBusinessLogic();
-				if(textField_1.getText()!="") {
+				if(textField_1.getText().equals("")) {
 					Kuota k=(Kuota) comboBox.getSelectedItem();
 					double d = Double.parseDouble(textField_1.getText());
 					boolean a = negozioLogika.diruaNahikorik(usr, d, k);
@@ -290,7 +290,7 @@ public class ApustuaEginGUI extends JFrame {
 						label.setText("Apuestua gorde da"); 
 						textField_1.setText("");
 						negozioLogika.mugimenduaErabiltzaileariGehitu(usr,d,k,g);
-						usr.toString();
+						
 					}else {
 						label.setVisible(true);
 						label.setText("Ez daukazu diru nahikorik");

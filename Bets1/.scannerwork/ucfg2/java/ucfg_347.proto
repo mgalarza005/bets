@@ -1,0 +1,29 @@
+
+0domain.Kuota#toStringEtekina()Ljava/lang/String;>
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Kuota.javav v("1*ø
+1>
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Kuota.javaw	 w(‰
+†
+>
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Kuota.javaw  w(5
+%0java.lang.Double"__id*&*$
+domain.Kuota"
+lortutakoEtekina°­
+>
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Kuota.javaw  w(@
+%1java.lang.String"-java.lang.Double#toString()Ljava/lang/String;*
+
+%0java.lang.Double2
+toString()—
+”
+>
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Kuota.javaw	 w(@
+%2java.lang.String"__concat*
+Kuotaren etekina: *
+
+%1java.lang.String"Z
+>
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Kuota.javaw w(A
+
+%2java.lang.StringB
+domain.Kuota
