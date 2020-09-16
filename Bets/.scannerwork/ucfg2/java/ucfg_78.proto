@@ -1,0 +1,83 @@
+
+-gui.MainGUI#getBtnItxi()Ljavax/swing/JButton;:
+.C:/Users/MIKEL1/git/Bets/Bets/gui/MainGUI.javaö ö("3*¥
+2:
+.C:/Users/MIKEL1/git/Bets/Bets/gui/MainGUI.javaø ø('Þ
+Û
+:
+.C:/Users/MIKEL1/git/Bets/Bets/gui/MainGUI.javaø ø(>
+%1java.util.ResourceBundle"Pjava.util.ResourceBundle#getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;*"
+java.util.ResourceBundle*
+	Etiquetasüù
+:
+.C:/Users/MIKEL1/git/Bets/Bets/gui/MainGUI.javaø ø(`
+%2java.lang.String"Hjava.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;* 
+
+%1java.util.ResourceBundle*
+MainGUI.btnItxi.text2getString(Ljava/lang/String;)nl
+:
+.C:/Users/MIKEL1/git/Bets/Bets/gui/MainGUI.javaø ø(
+%3javax.swing.JButton"javax.swing.JButton­
+ª
+:
+.C:/Users/MIKEL1/git/Bets/Bets/gui/MainGUI.javaø ø(a
+%4"/javax.swing.JButton#<init>(Ljava/lang/String;)V*
+
+%3javax.swing.JButton*
+
+%2java.lang.String}
+{
+:
+.C:/Users/MIKEL1/git/Bets/Bets/gui/MainGUI.javaø ø(a
+gui.MainGUI"	
+btnItxi"__id*
+
+%3javax.swing.JButton}
+{
+:
+.C:/Users/MIKEL1/git/Bets/Bets/gui/MainGUI.javaù ù(
+
+%5javax.swing.JButton"__id**
+gui.MainGUI"	
+btnItxib`
+:
+.C:/Users/MIKEL1/git/Bets/Bets/gui/MainGUI.javaù! ù(/
+%6gui.MainGUI$8"gui.MainGUI$8w
+u
+:
+.C:/Users/MIKEL1/git/Bets/Bets/gui/MainGUI.javaù ý(
+%7"java.lang.Object#<init>()V*
+
+%6gui.MainGUI$8ƒ€
+:
+.C:/Users/MIKEL1/git/Bets/Bets/gui/MainGUI.javaù ý(
+
+%8void"Njavax.swing.AbstractButton#addActionListener(Ljava/awt/event/ActionListener;)V*
+
+%5javax.swing.JButton*
+
+%6gui.MainGUI$822addActionListener(Ljava/awt/event/ActionListener;)*
+1*Æ
+3:
+.C:/Users/MIKEL1/git/Bets/Bets/gui/MainGUI.java÷ ÷(}
+{
+:
+.C:/Users/MIKEL1/git/Bets/Bets/gui/MainGUI.java÷ ÷(
+%0javax.swing.JButton"__id**
+gui.MainGUI"	
+btnItxi*
+2
+1*™
+1:
+.C:/Users/MIKEL1/git/Bets/Bets/gui/MainGUI.javaÿ	 ÿ(}
+{
+:
+.C:/Users/MIKEL1/git/Bets/Bets/gui/MainGUI.javaÿ	 ÿ(
+%9javax.swing.JButton"__id**
+gui.MainGUI"	
+btnItxi"Y
+:
+.C:/Users/MIKEL1/git/Bets/Bets/gui/MainGUI.javaÿ ÿ(
+
+%9javax.swing.JButtonB
+gui.MainGUI
