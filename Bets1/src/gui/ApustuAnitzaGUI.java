@@ -282,7 +282,7 @@ public class ApustuAnitzaGUI extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				try {
 				BLFacade negozioLogika=MainGUI.getBusinessLogic();
-				if(textField_1.getText()!="") {
+				if(textField_1.getText().equals("")) {
 					Kuota k=(Kuota) comboBox.getSelectedItem();
 					User u1 = negozioLogika.lortuUser(usr);
 					Apustua a1 = new Apustua(0.0, u1, k, k.getEmaitza(), u1.getLog(), Integer.toString(k.getKNumber()));
