@@ -18,11 +18,11 @@ import javax.swing.table.DefaultTableModel;
 
 public class GertaeraBikoiztuGUI extends JFrame {
 	private static final long serialVersionUID = 1L;
+	private static String etiketak = "Etiquetas";
+	private final JLabel jLabelEventDate = new JLabel(ResourceBundle.getBundle(etiketak).getString("EventDate"));
+	private final JLabel jLabelEvents = new JLabel(ResourceBundle.getBundle(etiketak).getString("Events")); 
 
-	private final JLabel jLabelEventDate = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("EventDate"));
-	private final JLabel jLabelEvents = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("Events")); 
-
-	private JButton jButtonClose = new JButton(ResourceBundle.getBundle("Etiquetas").getString("Close"));
+	private JButton jButtonClose = new JButton(ResourceBundle.getBundle(etiketak).getString("Close"));
 
 	// Code for JCalendar
 	private JCalendar jCalendar1 = new JCalendar();
@@ -36,16 +36,16 @@ public class GertaeraBikoiztuGUI extends JFrame {
 
 
 	private String[] columnNamesEvents = new String[] {
-			ResourceBundle.getBundle("Etiquetas").getString("EventN"), 
-			ResourceBundle.getBundle("Etiquetas").getString("Event"), 
+			ResourceBundle.getBundle(etiketak).getString("EventN"), 
+			ResourceBundle.getBundle(etiketak).getString("Event"), 
 
 	};
 	private String[] columnNamesQueries = new String[] {
-			ResourceBundle.getBundle("Etiquetas").getString("QueryN"), 
-			ResourceBundle.getBundle("Etiquetas").getString("Query")
+			ResourceBundle.getBundle(etiketak).getString("QueryN"), 
+			ResourceBundle.getBundle(etiketak).getString("Query")
 
 	};
-	private final JButton btnNewButton = new JButton(ResourceBundle.getBundle("Etiquetas").getString("GertaeraBikoiztuGUI.btnNewButton.text")); //$NON-NLS-1$ //$NON-NLS-2$
+	private final JButton btnNewButton = new JButton(ResourceBundle.getBundle(etiketak).getString("GertaeraBikoiztuGUI.btnNewButton.text")); //$NON-NLS-1$ //$NON-NLS-2$
 
 	public GertaeraBikoiztuGUI()
 	{
@@ -63,7 +63,7 @@ public class GertaeraBikoiztuGUI extends JFrame {
 	private void jbInit() throws Exception
 	{
 		this.setSize(new Dimension(700, 500));
-		this.setTitle(ResourceBundle.getBundle("Etiquetas").getString("QueryQueries"));
+		this.setTitle(ResourceBundle.getBundle(etiketak).getString("QueryQueries"));
 		getContentPane().setLayout(null);
 		jLabelEventDate.setBounds(40, 15, 140, 25);
 
@@ -72,11 +72,11 @@ public class GertaeraBikoiztuGUI extends JFrame {
 		this.getContentPane().add(jLabelEvents);
 		jButtonClose.setBounds(445, 410, 130, 30);
 		
-		JLabel lblAukeratuDataBerria = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("GertaeraBikoiztuGUI.lblAukeratuDataBerria.text")); //$NON-NLS-1$ //$NON-NLS-2$
+		JLabel lblAukeratuDataBerria = new JLabel(ResourceBundle.getBundle(etiketak).getString("GertaeraBikoiztuGUI.lblAukeratuDataBerria.text")); //$NON-NLS-1$ //$NON-NLS-2$
 		lblAukeratuDataBerria.setBounds(36, 223, 207, 16);
 		getContentPane().add(lblAukeratuDataBerria);
 		
-		JLabel lblNewLabel = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("GertaeraBikoiztuGUI.lblNewLabel.text"));
+		JLabel lblNewLabel = new JLabel(ResourceBundle.getBundle(etiketak).getString("GertaeraBikoiztuGUI.lblNewLabel.text"));
 		lblNewLabel.setVisible(false);
 		lblNewLabel.setBounds(64, 417, 156, 16);
 		getContentPane().add(lblNewLabel);
@@ -125,8 +125,8 @@ public class GertaeraBikoiztuGUI extends JFrame {
 
 						Vector<domain.Event> events=facade.getEvents(firstDay);
 
-						if (events.isEmpty() ) jLabelEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("NoEvents")+ ": "+dateformat1.format(calendarMio.getTime()));
-						else jLabelEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("Events")+ ": "+dateformat1.format(calendarMio.getTime()));
+						if (events.isEmpty() ) jLabelEvents.setText(ResourceBundle.getBundle(etiketak).getString("NoEvents")+ ": "+dateformat1.format(calendarMio.getTime()));
+						else jLabelEvents.setText(ResourceBundle.getBundle(etiketak).getString("Events")+ ": "+dateformat1.format(calendarMio.getTime()));
 						for (domain.Event ev:events){
 							Vector<Object> row = new Vector<Object>();
 

@@ -1,75 +1,16 @@
 
-JdataAccess.DataAccess#isLoginWorker(Ljava/lang/String;Ljava/lang/String;)ZI
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÌ Ì("5*£
-2I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÙ Ù("S
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÙ Ù(
-""*Ò
-3I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÛ Û(∂≥
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÛ Û(
-%4java.lang.String")domain.Worker#getPass()Ljava/lang/String;*
-
-amaiadomain.Worker2	getPass()ﬂ‹
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÛ Û(%	
-%5int"/java.lang.String#compareTo(Ljava/lang/String;)I*
-
-%4java.lang.String*
-
-passjava.lang.String2compareTo(Ljava/lang/String;)*
-2
-1*£
-4I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÒ
- Ò("S
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÒ Ò(
-""*‰
-5I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÓ Ó(v
-t
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÓ Ó(
-%0java.io.PrintStream"__id*
-""í
-è
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÓ Ó(
-%1java.lang.String"__concat*
-
-logjava.lang.String*
- ¶
-£
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÓ Ó(#
-%2java.lang.String"__concat*
-
-%1java.lang.String*
-
-passjava.lang.String‡›
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÓ Ó($
-
-%3void"0java.io.PrintStream#println(Ljava/lang/String;)V*
-
-%0java.io.PrintStream*
-
-%2java.lang.String2println(Ljava/lang/String;)s
-q
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÔ Ô(+
-amaiadomain.Worker"__id*
-""*
-3
-4*£
+IdataAccess.DataAccess#lortuErabiltzailea(Ljava/lang/String;)Ldomain/User;I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaå å("1*û
 1I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaˆ	 ˆ("S
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaç ç(m
+k
 I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaˆ ˆ(
-"":
-logjava.lang.String:
-passjava.lang.StringB
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaé é($
+udomain.User"__id*
+"""_
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaê ê(
+
+udomain.User:
+usrjava.lang.StringB
 dataAccess.DataAccess

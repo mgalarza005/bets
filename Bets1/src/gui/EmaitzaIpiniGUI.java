@@ -17,10 +17,10 @@ import javax.swing.table.DefaultTableModel;
 
 public class EmaitzaIpiniGUI extends JFrame {
 	private static final long serialVersionUID = 1L;
-
-	private final JLabel jLabelEventDate = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("EventDate"));
-	private final JLabel jLabelQueries = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("Queries")); 
-	private final JLabel jLabelEvents = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("Events"));
+	private static String etiketak = "Etiquetas";
+	private final JLabel jLabelEventDate = new JLabel(ResourceBundle.getBundle(etiketak).getString("EventDate"));
+	private final JLabel jLabelQueries = new JLabel(ResourceBundle.getBundle(etiketak).getString("Queries")); 
+	private final JLabel jLabelEvents = new JLabel(ResourceBundle.getBundle(etiketak).getString("Events"));
 	private JButton emiatzaGorde = new JButton();
 	// Code for JCalendar
 	private JCalendar jCalendar1 = new JCalendar();
@@ -38,13 +38,13 @@ public class EmaitzaIpiniGUI extends JFrame {
 
 
 	private String[] columnNamesEvents = new String[] {
-			ResourceBundle.getBundle("Etiquetas").getString("EventN"), 
-			ResourceBundle.getBundle("Etiquetas").getString("Event"), 
+			ResourceBundle.getBundle(etiketak).getString("EventN"), 
+			ResourceBundle.getBundle(etiketak).getString("Event"), 
 
 	};
 	private String[] columnNamesQueries = new String[] {
-			ResourceBundle.getBundle("Etiquetas").getString("QueryN"), 
-			ResourceBundle.getBundle("Etiquetas").getString("Query")
+			ResourceBundle.getBundle(etiketak).getString("QueryN"), 
+			ResourceBundle.getBundle(etiketak).getString("Query")
 
 	};
 	private final JLabel lblNewLabelMezuak = new JLabel("");
@@ -56,7 +56,7 @@ public class EmaitzaIpiniGUI extends JFrame {
 	public EmaitzaIpiniGUI()
 	{
 		txtEmaitza.setEditable(false);
-		txtEmaitza.setText(ResourceBundle.getBundle("Etiquetas").getString("KuotakIpiniGUI.txtEmaitza.text")); //$NON-NLS-1$ //$NON-NLS-2$
+		txtEmaitza.setText(ResourceBundle.getBundle(etiketak).getString("KuotakIpiniGUI.txtEmaitza.text")); //$NON-NLS-1$ //$NON-NLS-2$
 		txtEmaitza.setBounds(102, 407, 116, 22);
 		txtEmaitza.setColumns(10);
 		try
@@ -76,7 +76,7 @@ public class EmaitzaIpiniGUI extends JFrame {
 
 		this.getContentPane().setLayout(null);
 		this.setSize(new Dimension(758, 644));
-		this.setTitle(ResourceBundle.getBundle("Etiquetas").getString("QueryQueries"));
+		this.setTitle(ResourceBundle.getBundle(etiketak).getString("QueryQueries"));
 
 		jLabelEventDate.setBounds(new Rectangle(40, 15, 140, 25));
 		jLabelQueries.setBounds(108, 222, 417, 14);
@@ -118,8 +118,8 @@ public class EmaitzaIpiniGUI extends JFrame {
 
 						Vector<domain.Event> events=negozioLogika.getEvents(firstDay);
 
-						if (events.isEmpty() ) jLabelEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("NoEvents")+ ": "+dateformat1.format(calendarMio.getTime()));
-						else jLabelEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("Events")+ ": "+dateformat1.format(calendarMio.getTime()));
+						if (events.isEmpty() ) jLabelEvents.setText(ResourceBundle.getBundle(etiketak).getString("NoEvents")+ ": "+dateformat1.format(calendarMio.getTime()));
+						else jLabelEvents.setText(ResourceBundle.getBundle(etiketak).getString("Events")+ ": "+dateformat1.format(calendarMio.getTime()));
 						for (domain.Event ev:events){
 							Vector<Object> row = new Vector<Object>();
 
@@ -161,9 +161,9 @@ public class EmaitzaIpiniGUI extends JFrame {
 				tableModelQueries.setColumnCount(3); // another column added to allocate q objects
 
 				if (queries.isEmpty())
-					jLabelQueries.setText(ResourceBundle.getBundle("Etiquetas").getString("NoQueries")+": "+ev.getDescription());
+					jLabelQueries.setText(ResourceBundle.getBundle(etiketak).getString("NoQueries")+": "+ev.getDescription());
 				else 
-					jLabelQueries.setText(ResourceBundle.getBundle("Etiquetas").getString("SelectedEvent")+" "+ev.getDescription());
+					jLabelQueries.setText(ResourceBundle.getBundle(etiketak).getString("SelectedEvent")+" "+ev.getDescription());
 
 				for (domain.Question q:queries){
 					Vector<Object> row = new Vector<Object>();
@@ -217,7 +217,7 @@ this.getContentPane().add(scrollPaneEvents, null);
 		emaitza.setVisible(true);
 		
 		errorea = new JTextField();
-		//errorea.setText(ResourceBundle.getBundle("Etiquetas").getString("KuotakIpiniGUI.textField.text")); //$NON-NLS-1$ //$NON-NLS-2$
+		//errorea.setText(ResourceBundle.getBundle(etiketak).getString("KuotakIpiniGUI.textField.text")); //$NON-NLS-1$ //$NON-NLS-2$
 		errorea.setBounds(40, 515, 194, 20);
 		getContentPane().add(errorea);
 		errorea.setColumns(10);

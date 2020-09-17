@@ -20,10 +20,10 @@ import javax.swing.table.DefaultTableModel;
 
 public class ApustuAnitzaGUI extends JFrame {
 	private static final long serialVersionUID = 1L;
-
-	private final JLabel jLabelEventDate = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("EventDate"));
-	private final JLabel jLabelQueries = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("Queries")); 
-	private final JLabel jLabelEvents = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("Events"));
+	private static String etiketak = "Etiquetas";
+	private final JLabel jLabelEventDate = new JLabel(ResourceBundle.getBundle(etiketak).getString("EventDate"));
+	private final JLabel jLabelQueries = new JLabel(ResourceBundle.getBundle(etiketak).getString("Queries")); 
+	private final JLabel jLabelEvents = new JLabel(ResourceBundle.getBundle(etiketak).getString("Events"));
 	private JButton kuotakIkusibutton = new JButton();
 	// Code for JCalendar
 	private JCalendar jCalendar1 = new JCalendar();
@@ -42,17 +42,17 @@ public class ApustuAnitzaGUI extends JFrame {
 	private Vector<Apustua> apustuLista;
 
 	private String[] columnNamesEvents = new String[] {
-			ResourceBundle.getBundle("Etiquetas").getString("EventN"), 
-			ResourceBundle.getBundle("Etiquetas").getString("Event"), 
+			ResourceBundle.getBundle(etiketak).getString("EventN"), 
+			ResourceBundle.getBundle(etiketak).getString("Event"), 
 
 	};
 	private String[] columnNamesQueries = new String[] {
-			ResourceBundle.getBundle("Etiquetas").getString("QueryN"), 
-			ResourceBundle.getBundle("Etiquetas").getString("Query")
+			ResourceBundle.getBundle(etiketak).getString("QueryN"), 
+			ResourceBundle.getBundle(etiketak).getString("Query")
 
 	};
 	
-	private final JLabel lblKuotak = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("KuotakIkusiGUI.lblKuotak.text")); 
+	private final JLabel lblKuotak = new JLabel(ResourceBundle.getBundle(etiketak).getString("KuotakIkusiGUI.lblKuotak.text")); 
 	private final JLabel label = new JLabel();
 	private final JTextField textField_1 = new JTextField();
 	
@@ -96,7 +96,7 @@ public class ApustuAnitzaGUI extends JFrame {
 		
 		this.getContentPane().setLayout(null);
 		this.setSize(new Dimension(758, 644));
-		this.setTitle(ResourceBundle.getBundle("Etiquetas").getString("QueryQueries"));
+		this.setTitle(ResourceBundle.getBundle(etiketak).getString("QueryQueries"));
 
 		jLabelEventDate.setBounds(new Rectangle(40, 15, 140, 25));
 		jLabelQueries.setBounds(40, 255, 78, 14);
@@ -138,8 +138,8 @@ public class ApustuAnitzaGUI extends JFrame {
 
 						Vector<domain.Event> events=negozioLogika.getEvents(firstDay);
 
-						if (events.isEmpty() ) jLabelEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("NoEvents")+ ": "+dateformat1.format(calendarMio.getTime()));
-						else jLabelEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("Events")+ ": "+dateformat1.format(calendarMio.getTime()));
+						if (events.isEmpty() ) jLabelEvents.setText(ResourceBundle.getBundle(etiketak).getString("NoEvents")+ ": "+dateformat1.format(calendarMio.getTime()));
+						else jLabelEvents.setText(ResourceBundle.getBundle(etiketak).getString("Events")+ ": "+dateformat1.format(calendarMio.getTime()));
 						for (domain.Event ev:events){
 							Vector<Object> row = new Vector<Object>();
 
@@ -181,9 +181,9 @@ public class ApustuAnitzaGUI extends JFrame {
 				tableModelQueries.setColumnCount(3); // another column added to allocate q objects
 
 				if (queries.isEmpty())
-					jLabelQueries.setText(ResourceBundle.getBundle("Etiquetas").getString("NoQueries")+": "+ev.getDescription());
+					jLabelQueries.setText(ResourceBundle.getBundle(etiketak).getString("NoQueries")+": "+ev.getDescription());
 				else 
-					jLabelQueries.setText(ResourceBundle.getBundle("Etiquetas").getString("SelectedEvent")+" "+ev.getDescription());
+					jLabelQueries.setText(ResourceBundle.getBundle(etiketak).getString("SelectedEvent")+" "+ev.getDescription());
 
 				for (domain.Question q:queries){
 					Vector<Object> row = new Vector<Object>();
@@ -231,7 +231,7 @@ public class ApustuAnitzaGUI extends JFrame {
 		
 		this.getContentPane().add(scrollPaneEvents, null);
 		this.getContentPane().add(scrollPaneQueries, null);
-		kuotakIkusibutton.setText(ResourceBundle.getBundle("Etiquetas").getString("ApustuaEginGUI.kuotaGorde.text")); //$NON-NLS-1$ //$NON-NLS-2$
+		kuotakIkusibutton.setText(ResourceBundle.getBundle(etiketak).getString("ApustuaEginGUI.kuotaGorde.text")); //$NON-NLS-1$ //$NON-NLS-2$
 		kuotakIkusibutton.setText("Kuotak ikusi");
 		kuotakIkusibutton.setBounds(new Rectangle(40, 378, 130, 30));
 		getContentPane().add(kuotakIkusibutton);
@@ -270,13 +270,13 @@ public class ApustuAnitzaGUI extends JFrame {
 		
 		getContentPane().add(lblKuotak);
 		
-		JLabel lblDirua = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("ApustuaEginGUI.lblDirua.text")); //$NON-NLS-1$ //$NON-NLS-2$
+		JLabel lblDirua = new JLabel(ResourceBundle.getBundle(etiketak).getString("ApustuaEginGUI.lblDirua.text")); //$NON-NLS-1$ //$NON-NLS-2$
 		lblDirua.setBounds(487, 473, 56, 16);
 		getContentPane().add(lblDirua);
 		
 		
 		
-		JButton btnApostatu = new JButton(ResourceBundle.getBundle("Etiquetas").getString("ApustuaEginGUI.btnApostatu.text")); //$NON-NLS-1$ //$NON-NLS-2$
+		JButton btnApostatu = new JButton(ResourceBundle.getBundle(etiketak).getString("ApustuaEginGUI.btnApostatu.text")); //$NON-NLS-1$ //$NON-NLS-2$
 		btnApostatu.setText("Apustua egin");
 		btnApostatu.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

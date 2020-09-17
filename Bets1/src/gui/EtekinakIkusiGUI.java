@@ -17,10 +17,10 @@ import javax.swing.table.DefaultTableModel;
 
 public class EtekinakIkusiGUI extends JFrame {
 	private static final long serialVersionUID = 1L;
-
-	private final JLabel jLabelEventDate = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("EventDate"));
-	private final JLabel jLabelQueries = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("Queries")); 
-	private final JLabel jLabelEvents = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("Events"));
+	private static String etiketak = "Etiquetas";
+	private final JLabel jLabelEventDate = new JLabel(ResourceBundle.getBundle(etiketak).getString("EventDate"));
+	private final JLabel jLabelQueries = new JLabel(ResourceBundle.getBundle(etiketak).getString("Queries")); 
+	private final JLabel jLabelEvents = new JLabel(ResourceBundle.getBundle(etiketak).getString("Events"));
 	private JButton kuotaGorde = new JButton();
 	// Code for JCalendar
 	private JCalendar jCalendar1 = new JCalendar();
@@ -38,17 +38,17 @@ public class EtekinakIkusiGUI extends JFrame {
 
 
 	private String[] columnNamesEvents = new String[] {
-			ResourceBundle.getBundle("Etiquetas").getString("EventN"), 
-			ResourceBundle.getBundle("Etiquetas").getString("Event"), 
+			ResourceBundle.getBundle(etiketak).getString("EventN"), 
+			ResourceBundle.getBundle(etiketak).getString("Event"), 
 
 	};
 	private String[] columnNamesQueries = new String[] {
-			ResourceBundle.getBundle("Etiquetas").getString("QueryN"), 
-			ResourceBundle.getBundle("Etiquetas").getString("Query")
+			ResourceBundle.getBundle(etiketak).getString("QueryN"), 
+			ResourceBundle.getBundle(etiketak).getString("Query")
 
 	};
 	private final JLabel lblNewLabelMezuak = new JLabel("");
-	private final JLabel lblKuotak = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("KuotakIkusiGUI.lblKuotak.text")); //$NON-NLS-1$ //$NON-NLS-2$
+	private final JLabel lblKuotak = new JLabel(ResourceBundle.getBundle(etiketak).getString("KuotakIkusiGUI.lblKuotak.text")); //$NON-NLS-1$ //$NON-NLS-2$
 	private JTextField textField;
 	
 	
@@ -75,7 +75,7 @@ public class EtekinakIkusiGUI extends JFrame {
 		
 		this.getContentPane().setLayout(null);
 		this.setSize(new Dimension(758, 644));
-		this.setTitle(ResourceBundle.getBundle("Etiquetas").getString("QueryQueries"));
+		this.setTitle(ResourceBundle.getBundle(etiketak).getString("QueryQueries"));
 
 		jLabelEventDate.setBounds(new Rectangle(40, 15, 140, 25));
 		jLabelQueries.setBounds(52, 261, 91, 14);
@@ -121,8 +121,8 @@ public class EtekinakIkusiGUI extends JFrame {
 
 						Vector<domain.Event> events=negozioLogika.getEvents(firstDay);
 
-						if (events.isEmpty() ) jLabelEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("NoEvents")+ ": "+dateformat1.format(calendarMio.getTime()));
-						else jLabelEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("Events")+ ": "+dateformat1.format(calendarMio.getTime()));
+						if (events.isEmpty() ) jLabelEvents.setText(ResourceBundle.getBundle(etiketak).getString("NoEvents")+ ": "+dateformat1.format(calendarMio.getTime()));
+						else jLabelEvents.setText(ResourceBundle.getBundle(etiketak).getString("Events")+ ": "+dateformat1.format(calendarMio.getTime()));
 						for (domain.Event ev:events){
 							Vector<Object> row = new Vector<Object>();
 
@@ -164,9 +164,9 @@ public class EtekinakIkusiGUI extends JFrame {
 				tableModelQueries.setColumnCount(3); // another column added to allocate q objects
 
 				if (queries.isEmpty())
-					jLabelQueries.setText(ResourceBundle.getBundle("Etiquetas").getString("NoQueries")+": "+ev.getDescription());
+					jLabelQueries.setText(ResourceBundle.getBundle(etiketak).getString("NoQueries")+": "+ev.getDescription());
 				else 
-					jLabelQueries.setText(ResourceBundle.getBundle("Etiquetas").getString("SelectedEvent")+" "+ev.getDescription());
+					jLabelQueries.setText(ResourceBundle.getBundle(etiketak).getString("SelectedEvent")+" "+ev.getDescription());
 
 				for (domain.Question q:queries){
 					Vector<Object> row = new Vector<Object>();
@@ -213,7 +213,7 @@ public class EtekinakIkusiGUI extends JFrame {
 		
 		this.getContentPane().add(scrollPaneEvents, null);
 		this.getContentPane().add(scrollPaneQueries, null);
-		kuotaGorde.setText(ResourceBundle.getBundle("Etiquetas").getString("EtekinakIkusiGUI.kuotaGorde.text")); //$NON-NLS-1$ //$NON-NLS-2$
+		kuotaGorde.setText(ResourceBundle.getBundle(etiketak).getString("EtekinakIkusiGUI.kuotaGorde.text")); //$NON-NLS-1$ //$NON-NLS-2$
 		
 		kuotaGorde.setBounds(new Rectangle(499, 214, 130, 30));
 		getContentPane().add(kuotaGorde);
@@ -257,7 +257,7 @@ public class EtekinakIkusiGUI extends JFrame {
 		
 		getContentPane().add(lblKuotak);
 		
-		JLabel lblGalderarenEtekina = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("EtekinakIkusiGUI.lblGalderarenEtekina.text")); //$NON-NLS-1$ //$NON-NLS-2$
+		JLabel lblGalderarenEtekina = new JLabel(ResourceBundle.getBundle(etiketak).getString("EtekinakIkusiGUI.lblGalderarenEtekina.text")); //$NON-NLS-1$ //$NON-NLS-2$
 		lblGalderarenEtekina.setBounds(545, 299, 159, 16);
 		getContentPane().add(lblGalderarenEtekina);
 		

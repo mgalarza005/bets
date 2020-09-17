@@ -1,9 +1,75 @@
 
-/configuration.ConfigXML#isBusinessLogicLocal()ZI
-?C:/Users/MIKEL1/git/Bets/Bets1/src/configuration/ConfigXML.javaE E($"1*£
-1I
-?C:/Users/MIKEL1/git/Bets/Bets1/src/configuration/ConfigXML.javaF	 F("S
+HdataAccess.DataAccess#isLoginUser(Ljava/lang/String;Ljava/lang/String;)ZI
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java· ·("5*£
+2I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaË Ë("S
 I
-?C:/Users/MIKEL1/git/Bets/Bets1/src/configuration/ConfigXML.javaF F(
-""B
-configuration.ConfigXML
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaË Ë(
+""*Ì
+3I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÁ Á(≤Ø
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÁ Á(
+%4java.lang.String"'domain.User#getPass()Ljava/lang/String;*
+
+amaiadomain.User2	getPass()ﬂ‹
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÁ Á(%	
+%5int"/java.lang.String#compareTo(Ljava/lang/String;)I*
+
+%4java.lang.String*
+
+passjava.lang.String2compareTo(Ljava/lang/String;)*
+2
+1*£
+4I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÂ
+ Â("S
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÂ Â(
+""*‚
+5I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java‚ ‚(v
+t
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java‚ ‚(
+%0java.io.PrintStream"__id*
+""í
+è
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java‚ ‚(
+%1java.lang.String"__concat*
+
+logjava.lang.String*
+ ¶
+£
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java‚ ‚(#
+%2java.lang.String"__concat*
+
+%1java.lang.String*
+
+passjava.lang.String‡›
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java‚ ‚($
+
+%3void"0java.io.PrintStream#println(Ljava/lang/String;)V*
+
+%0java.io.PrintStream*
+
+%2java.lang.String2println(Ljava/lang/String;)q
+o
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java„ „('
+amaiadomain.User"__id*
+""*
+3
+4*£
+1I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÍ	 Í("S
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÍ Í(
+"":
+logjava.lang.String:
+passjava.lang.StringB
+dataAccess.DataAccess

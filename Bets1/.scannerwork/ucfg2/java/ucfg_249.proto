@@ -1,46 +1,18 @@
 
-]businessLogic.BLFacadeImplementation#getKuotaContainer(Ldomain/Kuota;)Ldomain/KuotaContainer;X
-LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java‰ ‰(("startingBlock*–
-startingBlockX
-LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java‰( ‰(1œ
-™
-X
-LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaˆ ˆ(
-
-%2"
-__annotate*
-java.lang.Override*
-
-kdomain.Kuota†
-ƒ
-X
-LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java‰/ ‰(0
-kdomain.Kuota"__annotation*
-
-%2*
-1*×
-1X
-LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaŠ( Š()‘Ž
-X
-LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaŠ Š('
-%0domain.KuotaContainer"domain.KuotaContainerÆ
-Ã
-X
-LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaŠ Š(*
-%1"-domain.KuotaContainer#<init>(Ldomain/Kuota;)V*
-
-%0domain.KuotaContainer*
-
-kdomain.KuotaŸ
-œ
-X
-LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaŠ Š(+
-kcdomain.KuotaContainer"__id*
-
-%0domain.KuotaContainer"y
-X
-LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java‹ ‹(
-
-kcdomain.KuotaContainer:
-kdomain.KuotaB(&
-$businessLogic.BLFacadeImplementation
+#domain.Apustua#getK()Ldomain/Kuota;@
+6C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Apustua.javaQ Q("1*š
+1@
+6C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Apustua.javaR	 R(
+y
+w
+@
+6C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Apustua.javaR	 R(
+
+%0domain.Kuota"__id**
+domain.Apustua"
+k"X
+@
+6C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Apustua.javaR R(
+
+%0domain.KuotaB
+domain.Apustua

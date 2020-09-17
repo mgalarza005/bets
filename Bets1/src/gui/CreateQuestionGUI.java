@@ -30,11 +30,11 @@ private static final long serialVersionUID = 1L;
 	
   private JComboBox<Event> jComboBoxEvents=new JComboBox<Event>();
   DefaultComboBoxModel<Event> modelEvents=new DefaultComboBoxModel<Event>();
-  
-  private JLabel jLabelListOfEvents = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("ListEvents"));
-  private JLabel jLabelQuery = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("Query"));
-  private JLabel jLabelMinBet = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("MinimumBetPrice"));
-  private JLabel jLabelEventDate = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("EventDate"));
+  private static String etiketak = "Etiquetas";
+  private JLabel jLabelListOfEvents = new JLabel(ResourceBundle.getBundle(etiketak).getString("ListEvents"));
+  private JLabel jLabelQuery = new JLabel(ResourceBundle.getBundle(etiketak).getString("Query"));
+  private JLabel jLabelMinBet = new JLabel(ResourceBundle.getBundle(etiketak).getString("MinimumBetPrice"));
+  private JLabel jLabelEventDate = new JLabel(ResourceBundle.getBundle(etiketak).getString("EventDate"));
 
 
   private JTextField jTextFieldQuery = new JTextField();
@@ -45,8 +45,8 @@ private static final long serialVersionUID = 1L;
   private JScrollPane scrollPaneEvents = new JScrollPane();
 
 
-  private JButton jButtonCreate = new JButton(ResourceBundle.getBundle("Etiquetas").getString("CreateQuery"));
-  private JButton jButtonClose = new JButton(ResourceBundle.getBundle("Etiquetas").getString("Close"));
+  private JButton jButtonCreate = new JButton(ResourceBundle.getBundle(etiketak).getString("CreateQuery"));
+  private JButton jButtonClose = new JButton(ResourceBundle.getBundle(etiketak).getString("Close"));
   private JLabel jLabelMsg = new JLabel();
   private JLabel jLabelError = new JLabel();
 
@@ -70,7 +70,7 @@ private static final long serialVersionUID = 1L;
 	  
     this.getContentPane().setLayout(null);
     this.setSize(new Dimension(604, 370));
-    this.setTitle(ResourceBundle.getBundle("Etiquetas").getString("CreateQuery"));
+    this.setTitle(ResourceBundle.getBundle(etiketak).getString("CreateQuery"));
     
     
     jComboBoxEvents.setModel(modelEvents);
@@ -155,8 +155,8 @@ private static final long serialVersionUID = 1L;
 
       		Vector<domain.Event> events=facade.getEvents(firstDay);
       		
-      		if (events.isEmpty() ) jLabelListOfEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("NoEvents")+ ": "+dateformat1.format(calendarMio.getTime()));
-      		  else jLabelListOfEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("Events")+ ": "+dateformat1.format(calendarMio.getTime()));
+      		if (events.isEmpty() ) jLabelListOfEvents.setText(ResourceBundle.getBundle(etiketak).getString("NoEvents")+ ": "+dateformat1.format(calendarMio.getTime()));
+      		  else jLabelListOfEvents.setText(ResourceBundle.getBundle(etiketak).getString("Events")+ ": "+dateformat1.format(calendarMio.getTime()));
       		jComboBoxEvents.removeAllItems();
     		  System.out.println("Events "+events);
 
@@ -247,7 +247,7 @@ private static final long serialVersionUID = 1L;
 	  			//It could be to trigger an exception if the introduced string is not a number
 	  			float inputPrice= Float.parseFloat(jTextFieldPrice.getText());
 	  			
-	  			if (inputPrice<=0) jLabelError.setText(ResourceBundle.getBundle("Etiquetas").getString("ErrorNumber"));
+	  			if (inputPrice<=0) jLabelError.setText(ResourceBundle.getBundle(etiketak).getString("ErrorNumber"));
 	  			else {
 	  			
 	  			//Obtain the business logic from a StartWindow class (local or remote)
@@ -255,17 +255,17 @@ private static final long serialVersionUID = 1L;
 
 	  			facade.createQuestion(event, inputQuery, inputPrice); 
 
-	  			jLabelMsg.setText(ResourceBundle.getBundle("Etiquetas").getString("QueryCreated"));
+	  			jLabelMsg.setText(ResourceBundle.getBundle(etiketak).getString("QueryCreated"));
 	  			}
 	  		} else
-	  			jLabelMsg.setText(ResourceBundle.getBundle("Etiquetas").getString("ErrorQuery"));
+	  			jLabelMsg.setText(ResourceBundle.getBundle(etiketak).getString("ErrorQuery"));
 	  	} catch (EventFinished e1) {
-	  		jLabelMsg.setText( ResourceBundle.getBundle("Etiquetas").getString("ErrorEventHasFinished")+": "+event.getDescription());
+	  		jLabelMsg.setText( ResourceBundle.getBundle(etiketak).getString("ErrorEventHasFinished")+": "+event.getDescription());
 	  	} catch (QuestionAlreadyExist e1) {
-		    jLabelMsg.setText( ResourceBundle.getBundle("Etiquetas").getString("ErrorQueryAlreadyExist"));
+		    jLabelMsg.setText( ResourceBundle.getBundle(etiketak).getString("ErrorQueryAlreadyExist"));
 	    }
 	  	catch (java.lang.NumberFormatException e1) {
-		    jLabelError.setText(ResourceBundle.getBundle("Etiquetas").getString("ErrorNumber"));
+		    jLabelError.setText(ResourceBundle.getBundle(etiketak).getString("ErrorNumber"));
 	    }catch (Exception e1) {
 
 	  		e1.printStackTrace();

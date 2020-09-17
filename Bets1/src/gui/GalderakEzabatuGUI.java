@@ -19,12 +19,12 @@ import javax.swing.table.DefaultTableModel;
 
 public class GalderakEzabatuGUI extends JFrame {
 	private static final long serialVersionUID = 1L;
+	private static String etiketak = "Etiquetas";
+	private final JLabel jLabelEventDate = new JLabel(ResourceBundle.getBundle(etiketak).getString("EventDate"));
+	private final JLabel jLabelQueries = new JLabel(ResourceBundle.getBundle(etiketak).getString("Queries")); 
+	private final JLabel jLabelEvents = new JLabel(ResourceBundle.getBundle(etiketak).getString("Events")); 
 
-	private final JLabel jLabelEventDate = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("EventDate"));
-	private final JLabel jLabelQueries = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("Queries")); 
-	private final JLabel jLabelEvents = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("Events")); 
-
-	private JButton jButtonClose = new JButton(ResourceBundle.getBundle("Etiquetas").getString("Close"));
+	private JButton jButtonClose = new JButton(ResourceBundle.getBundle(etiketak).getString("Close"));
 
 	// Code for JCalendar
 	private JCalendar jCalendar1 = new JCalendar();
@@ -40,16 +40,16 @@ public class GalderakEzabatuGUI extends JFrame {
 
 	
 	private String[] columnNamesEvents = new String[] {
-			ResourceBundle.getBundle("Etiquetas").getString("EventN"), 
-			ResourceBundle.getBundle("Etiquetas").getString("Event"), 
+			ResourceBundle.getBundle(etiketak).getString("EventN"), 
+			ResourceBundle.getBundle(etiketak).getString("Event"), 
 
 	};
 	private String[] columnNamesQueries = new String[] {
-			ResourceBundle.getBundle("Etiquetas").getString("QueryN"), 
-			ResourceBundle.getBundle("Etiquetas").getString("Query")
+			ResourceBundle.getBundle(etiketak).getString("QueryN"), 
+			ResourceBundle.getBundle(etiketak).getString("Query")
 
 	};
-	private final JButton btnEzabatu = new JButton(ResourceBundle.getBundle("Etiquetas").getString("GalderakEzabatuGUI.btnEzabatu.text")); //$NON-NLS-1$ //$NON-NLS-2$
+	private final JButton btnEzabatu = new JButton(ResourceBundle.getBundle(etiketak).getString("GalderakEzabatuGUI.btnEzabatu.text")); //$NON-NLS-1$ //$NON-NLS-2$
 
 	public GalderakEzabatuGUI()
 	{
@@ -69,7 +69,7 @@ public class GalderakEzabatuGUI extends JFrame {
 
 		this.getContentPane().setLayout(null);
 		this.setSize(new Dimension(700, 500));
-		this.setTitle(ResourceBundle.getBundle("Etiquetas").getString("QueryQueries"));
+		this.setTitle(ResourceBundle.getBundle(etiketak).getString("QueryQueries"));
 
 		jLabelEventDate.setBounds(new Rectangle(40, 15, 140, 25));
 		jLabelQueries.setBounds(79, 247, 406, 14);
@@ -122,8 +122,8 @@ public class GalderakEzabatuGUI extends JFrame {
 
 						Vector<domain.Event> events=facade.getEvents(firstDay);
 
-						if (events.isEmpty() ) jLabelEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("NoEvents")+ ": "+dateformat1.format(calendarMio.getTime()));
-						else jLabelEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("Events")+ ": "+dateformat1.format(calendarMio.getTime()));
+						if (events.isEmpty() ) jLabelEvents.setText(ResourceBundle.getBundle(etiketak).getString("NoEvents")+ ": "+dateformat1.format(calendarMio.getTime()));
+						else jLabelEvents.setText(ResourceBundle.getBundle(etiketak).getString("Events")+ ": "+dateformat1.format(calendarMio.getTime()));
 						for (domain.Event ev:events){
 							Vector<Object> row = new Vector<Object>();
 
@@ -163,9 +163,9 @@ public class GalderakEzabatuGUI extends JFrame {
 				tableModelQueries.setDataVector(null, columnNamesQueries);
 
 				if (queries.isEmpty())
-					jLabelQueries.setText(ResourceBundle.getBundle("Etiquetas").getString("NoQueries")+": "+ev.getDescription());
+					jLabelQueries.setText(ResourceBundle.getBundle(etiketak).getString("NoQueries")+": "+ev.getDescription());
 				else 
-					jLabelQueries.setText(ResourceBundle.getBundle("Etiquetas").getString("SelectedEvent")+" "+ev.getDescription());
+					jLabelQueries.setText(ResourceBundle.getBundle(etiketak).getString("SelectedEvent")+" "+ev.getDescription());
 
 				for (domain.Question q:queries){
 					Vector<Object> row = new Vector<Object>();
@@ -196,7 +196,7 @@ public class GalderakEzabatuGUI extends JFrame {
 		tableQueries.getColumnModel().getColumn(0).setPreferredWidth(25);
 		tableQueries.getColumnModel().getColumn(1).setPreferredWidth(268);
 		
-		JLabel mezua = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("GalderakEzabatuGUI.mezua.text")); //$NON-NLS-1$ //$NON-NLS-2$
+		JLabel mezua = new JLabel(ResourceBundle.getBundle(etiketak).getString("GalderakEzabatuGUI.mezua.text")); //$NON-NLS-1$ //$NON-NLS-2$
 		mezua.setBounds(295, 431, 99, 14);
 		getContentPane().add(mezua);	
 		

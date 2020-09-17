@@ -1,16 +1,15 @@
 
-+domain.Kuota#getEmaitza()Ljava/lang/String;>
-4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Kuota.java   ("1* 
+domain.Kuota#getKNumber()I>
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Kuota.javal l("1*•
 1>
-4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Kuota.java!	 !(
-}
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Kuota.javam	 m(…
+‚
 >
-4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Kuota.java!	 !(
-%0java.lang.String"__id**
-domain.Kuota"	
-emaitza"Z
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Kuota.javam	 m(
+%0java.lang.Integer"__id*!*
+domain.Kuota"
+kuotaNumber"H
 >
-4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Kuota.java! !(
-
-%0java.lang.StringB
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Kuota.javam m(
+""B
 domain.Kuota
