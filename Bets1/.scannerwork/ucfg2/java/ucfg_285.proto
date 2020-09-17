@@ -51,7 +51,7 @@ I
 I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.java’
  ’(D/
-Lgui/CreateQuestionGUI$4381;"
+Lgui/CreateQuestionGUI$4405;"
 calendarMio"__id*
 
 %5java.lang.ObjectÍ
@@ -72,7 +72,7 @@ I
 I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.java”  ”(+
 %7java.util.Calendar"__id*1*/
-Lgui/CreateQuestionGUI$4381;"
+Lgui/CreateQuestionGUI$4405;"
 calendarMiosq
 I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.java•! •(%
@@ -88,7 +88,7 @@ I
 I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.java• •(S
 %10java.util.Date"<gui.CreateQuestionGUI#trim(Ljava/util/Date;)Ljava/util/Date;* 
-Lgui/CreateQuestionGUI$4381;*
+Lgui/CreateQuestionGUI$4405;*
 
 %8java.util.Date‰
 †
@@ -145,14 +145,14 @@ I
 ­
 I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.java¤ ¤('
-%37 javax.swing.DefaultComboBoxModel"__id*1*/
-Lgui/CreateQuestionGUI$4381;"
+%39 javax.swing.DefaultComboBoxModel"__id*1*/
+Lgui/CreateQuestionGUI$4405;"
 modelEventsþû
 I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.java¤ ¤(,
-%38void"@javax.swing.DefaultComboBoxModel#addElement(Ljava/lang/Object;)V*)
+%40void"@javax.swing.DefaultComboBoxModel#addElement(Ljava/lang/Object;)V*)
 '
-%37 javax.swing.DefaultComboBoxModel*
+%39 javax.swing.DefaultComboBoxModel*
 
 evdomain.Event2addElement(Ljava/lang/Object;)*
 9*Ò
@@ -161,128 +161,136 @@ I
 u
 I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.java¡ ¡(
-%34java.io.PrintStream"__id*
+%36java.io.PrintStream"__id*
 ""œ
 ™
 I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.java¡ ¡(+
-%35java.lang.String"__concat*	
+%37java.lang.String"__concat*	
 Events *
 
 eventsjava.util.Vectorãà
 I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.java¡ ¡(,
-%36void"0java.io.PrintStream#println(Ljava/lang/String;)V*
+%38void"0java.io.PrintStream#println(Ljava/lang/String;)V*
 
-%34java.io.PrintStream*
+%36java.io.PrintStream*
 
-%35java.lang.String2println(Ljava/lang/String;)*
+%37java.lang.String2println(Ljava/lang/String;)*
 9*º
 13I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.java   (©
 ¦
 I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.java   (
-%32javax.swing.JComboBox"__id*5*3
-Lgui/CreateQuestionGUI$4381;"
+%34javax.swing.JComboBox"__id*5*3
+Lgui/CreateQuestionGUI$4405;"
 jComboBoxEvents¶³
 I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.java   ((
-%33void"'javax.swing.JComboBox#removeAllItems()V*
+%35void"'javax.swing.JComboBox#removeAllItems()V*
 
-%32javax.swing.JComboBox2removeAllItems()*
+%34javax.swing.JComboBox2removeAllItems()*
 12*æ
 14J
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸ* Ÿ(“¨
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸ* Ÿ(¨
 ¥
 J
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸ* Ÿ(“
-%30java.lang.String"__concat*
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸ* Ÿ(
+%32java.lang.String"__concat*
 
-%26java.lang.String*
+%28java.lang.String*
 
-%29java.lang.Stringâß
+%31java.lang.Stringâß
 J
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸ Ÿ(”
-%31void"/javax.swing.JLabel#setText(Ljava/lang/String;)V*
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸ Ÿ(‘
+%33void"/javax.swing.JLabel#setText(Ljava/lang/String;)V*
 
-%23javax.swing.JLabel*
+%24javax.swing.JLabel*
 
-%30java.lang.String2setText(Ljava/lang/String;)*
+%32java.lang.String2setText(Ljava/lang/String;)*
 13*Ü
 15J
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸj Ÿ(“ƒ€
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸg Ÿ(ƒ€
 J
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸj Ÿ(“
-%29java.lang.String"?java.text.DateFormat#format(Ljava/util/Date;)Ljava/lang/String;*%
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸg Ÿ(
+%31java.lang.String"?java.text.DateFormat#format(Ljava/util/Date;)Ljava/lang/String;*%
 #
 dateformat1java.text.DateFormat*
 
-%28java.util.Date2format(Ljava/util/Date;)*
+%30java.util.Date2format(Ljava/util/Date;)*
 14*Ñ
 16I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸe Ÿ(i”
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸb Ÿ(f”
 ‘
 I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸ* Ÿ(i
-%26java.lang.String"__concat*
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸ* Ÿ(f
+%28java.lang.String"__concat*
 
-%25java.lang.String*
+%27java.lang.String*
 : £
  
 J
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸ} Ÿ(ˆ
-%27java.util.Calendar"__id*1*/
-Lgui/CreateQuestionGUI$4381;"
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸz Ÿ(…
+%29java.util.Calendar"__id*1*/
+Lgui/CreateQuestionGUI$4405;"
 calendarMio¼¹
 J
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸ} Ÿ(’
-%28java.util.Date",java.util.Calendar#getTime()Ljava/util/Date;*
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸz Ÿ(
+%30java.util.Date",java.util.Calendar#getTime()Ljava/util/Date;*
 
-%27java.util.Calendar2	getTime()*
+%29java.util.Calendar2	getTime()*
 15*×
 17I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸZ Ÿ(bÿü
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸW Ÿ(_ÿü
 I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸ* Ÿ(c
-%25java.lang.String"Hjava.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;*!
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸ* Ÿ(`
+%27java.lang.String"Hjava.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;*!
 
-%24java.util.ResourceBundle*
+%26java.util.ResourceBundle*
 
 Events2getString(Ljava/lang/String;)*
-16*ò
+16*—
 18I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸ Ÿ(!©
 ¦
 I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸ Ÿ(!
-%23javax.swing.JLabel"__id*8*6
-Lgui/CreateQuestionGUI$4381;"
-jLabelListOfEventsî
-ë
+%24javax.swing.JLabel"__id*8*6
+Lgui/CreateQuestionGUI$4405;"
+jLabelListOfEvents–
+“
 I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸ* Ÿ(O
-%24java.util.ResourceBundle"Pjava.util.ResourceBundle#getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;*"
-java.util.ResourceBundle*
-	Etiquetas*
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸC Ÿ(K
+%25java.lang.String"__id*'*%
+gui.CreateQuestionGUI"
+
+etiketakú
+÷
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaŸ* Ÿ(L
+%26java.util.ResourceBundle"Pjava.util.ResourceBundle#getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;*"
+java.util.ResourceBundle*
+
+%25java.lang.String*
 17*æ
 19J
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaž: ž(¥¨
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaž: ž(¢¨
 ¥
 J
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaž: ž(¥
-%21java.lang.String"__concat*
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaž: ž(¢
+%22java.lang.String"__concat*
 
-%17java.lang.String*
+%18java.lang.String*
 
-%20java.lang.Stringâß
+%21java.lang.Stringâß
 J
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaž ž(¦
-%22void"/javax.swing.JLabel#setText(Ljava/lang/String;)V*
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaž ž(£
+%23void"/javax.swing.JLabel#setText(Ljava/lang/String;)V*
 
 %14javax.swing.JLabel*
 
-%21java.lang.String2setText(Ljava/lang/String;)*
+%22java.lang.String2setText(Ljava/lang/String;)*
 13*g
 0 "`
 I
@@ -293,7 +301,7 @@ I
 ®
 I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.java² ²(&
-%49"7gui.CreateQuestionGUI#paintDaysWithEvents(LJCalendar;)V*"
+%51"7gui.CreateQuestionGUI#paintDaysWithEvents(LJCalendar;)V*"
 gui.CreateQuestionGUI*
 ""*
 0*¹
@@ -302,14 +310,14 @@ I
 ¢
 I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaª	 ª(
-%44javax.swing.JButton"__id*3*1
-Lgui/CreateQuestionGUI$4381;"
+%46javax.swing.JButton"__id*3*1
+Lgui/CreateQuestionGUI$4405;"
 jButtonCreate»¸
 I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaª	 ª('
-%45void")javax.swing.AbstractButton#setEnabled(Z)V*
+%47void")javax.swing.AbstractButton#setEnabled(Z)V*
 
-%44javax.swing.JButton*
+%46javax.swing.JButton*
 ""2setEnabled(Z)*
 1*¹
 5I
@@ -317,14 +325,14 @@ I
 ¢
 I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.java¨	 ¨(
-%42javax.swing.JButton"__id*3*1
-Lgui/CreateQuestionGUI$4381;"
+%44javax.swing.JButton"__id*3*1
+Lgui/CreateQuestionGUI$4405;"
 jButtonCreate»¸
 I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.java¨	 ¨((
-%43void")javax.swing.AbstractButton#setEnabled(Z)V*
+%45void")javax.swing.AbstractButton#setEnabled(Z)V*
 
-%42javax.swing.JButton*
+%44javax.swing.JButton*
 ""2setEnabled(Z)*
 1*ó
 7I
@@ -332,7 +340,7 @@ I
 I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.java§ §(
 
-%41int"java.util.Vector#size()I*
+%43int"java.util.Vector#size()I*
 
 eventsjava.util.Vector2size()*
 4
@@ -342,14 +350,14 @@ I
 ¦
 I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.java¥ ¥(
-%39javax.swing.JComboBox"__id*5*3
-Lgui/CreateQuestionGUI$4381;"
+%41javax.swing.JComboBox"__id*5*3
+Lgui/CreateQuestionGUI$4405;"
 jComboBoxEvents¥¢
 I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.java¥ ¥(!
-%40void"java.awt.Component#repaint()V*
+%42void"java.awt.Component#repaint()V*
 
-%39javax.swing.JComboBox2	repaint()*
+%41javax.swing.JComboBox2	repaint()*
 7*ß
 9I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.java£ £(o
@@ -369,60 +377,68 @@ __arrayGet*
 8
 10*Ü
 20J
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaž| ž(¥ƒ€
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javažy ž(¢ƒ€
 J
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaž| ž(¥
-%20java.lang.String"?java.text.DateFormat#format(Ljava/util/Date;)Ljava/lang/String;*%
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javažy ž(¢
+%21java.lang.String"?java.text.DateFormat#format(Ljava/util/Date;)Ljava/lang/String;*%
 #
 dateformat1java.text.DateFormat*
 
-%19java.util.Date2format(Ljava/util/Date;)*
+%20java.util.Date2format(Ljava/util/Date;)*
 19*Ó
 21I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javažw ž({”
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javažt ž(x”
 ‘
 I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaž: ž({
-%17java.lang.String"__concat*
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaž: ž(x
+%18java.lang.String"__concat*
 
-%16java.lang.String*
+%17java.lang.String*
 : ¤
 ¡
 K
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaž ž(š
-%18java.util.Calendar"__id*1*/
-Lgui/CreateQuestionGUI$4381;"
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javažŒ ž(—
+%19java.util.Calendar"__id*1*/
+Lgui/CreateQuestionGUI$4405;"
 calendarMio½º
 K
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaž ž(¤
-%19java.util.Date",java.util.Calendar#getTime()Ljava/util/Date;*
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javažŒ ž(¡
+%20java.util.Date",java.util.Calendar#getTime()Ljava/util/Date;*
 
-%18java.util.Calendar2	getTime()*
+%19java.util.Calendar2	getTime()*
 20*Ù
 22I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javažj ž(tþ
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javažg ž(qþ
 I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaž: ž(u
-%16java.lang.String"Hjava.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;*!
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaž: ž(r
+%17java.lang.String"Hjava.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;*!
 
-%15java.util.ResourceBundle*
+%16java.util.ResourceBundle*
 
 NoEvents2getString(Ljava/lang/String;)*
-21*ò
+21*—
 23I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaž ž(1©
 ¦
 I
 =C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaž ž(1
 %14javax.swing.JLabel"__id*8*6
-Lgui/CreateQuestionGUI$4381;"
-jLabelListOfEventsî
-ë
+Lgui/CreateQuestionGUI$4405;"
+jLabelListOfEvents–
+“
 I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaž: ž(_
-%15java.util.ResourceBundle"Pjava.util.ResourceBundle#getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;*"
-java.util.ResourceBundle*
-	Etiquetas*
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javažS ž([
+%15java.lang.String"__id*'*%
+gui.CreateQuestionGUI"
+
+etiketakú
+÷
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/gui/CreateQuestionGUI.javaž: ž(\
+%16java.util.ResourceBundle"Pjava.util.ResourceBundle#getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;*"
+java.util.ResourceBundle*
+
+%15java.lang.String*
 22:5
 propertychangeeventjava.beans.PropertyChangeEventB 
-Lgui/CreateQuestionGUI$4381;
+Lgui/CreateQuestionGUI$4405;
