@@ -1,16 +1,9 @@
 
-;domain.KuotaContainer#getApustuLista()Ljava/util/ArrayList;G
-=C:/Users/MIKEL1/git/Bets/Bets1/src/domain/KuotaContainer.java ()"1*Ð
-1G
-=C:/Users/MIKEL1/git/Bets/Bets1/src/domain/KuotaContainer.java	 (™
-–
-G
-=C:/Users/MIKEL1/git/Bets/Bets1/src/domain/KuotaContainer.java	 (
-%0java.util.ArrayList"__id***(
-domain.KuotaContainer"
-apustuLista"f
-G
-=C:/Users/MIKEL1/git/Bets/Bets1/src/domain/KuotaContainer.java (
-
-%0java.util.ArrayListB
-domain.KuotaContainer
+domain.Apustua#getDirukop()D@
+6C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Apustua.java` `("1*‘
+1@
+6C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Apustua.javaa	 a("J
+@
+6C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Apustua.javaa a(
+""B
+domain.Apustua

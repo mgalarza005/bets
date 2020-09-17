@@ -1,18 +1,27 @@
 
-+domain.ApustuAnizkoitza#getU()Ldomain/User;I
-?C:/Users/MIKEL1/git/Bets/Bets1/src/domain/ApustuAnizkoitza.javaJ J("1*æ
+FdataAccess.DataAccess#kuotakLortu(Ldomain/Question;)Ljava/util/Vector;I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaã ã(!"1*Ú
 1I
-?C:/Users/MIKEL1/git/Bets/Bets1/src/domain/ApustuAnizkoitza.javaK	 K(
-ã
-à
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaå å(t
+r
 I
-?C:/Users/MIKEL1/git/Bets/Bets1/src/domain/ApustuAnizkoitza.javaK	 K(
-
-%0domain.User"__id*"* 
-domain.ApustuAnizkoitza"
-u"`
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaç ç(-
+galddomain.Question"__id*
+""Ω∫
 I
-?C:/Users/MIKEL1/git/Bets/Bets1/src/domain/ApustuAnizkoitza.javaK K(
-
-%0domain.UserB
-domain.ApustuAnizkoitza
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaé é($
+%0java.util.Vector"-domain.Question#getKuotak()Ljava/util/Vector;*
+
+galddomain.Question2getKuotak()Ö
+Ç
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaé é(%
+kjava.util.Vector"__id*
+
+%0java.util.Vector"d
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaê ê(
+
+kjava.util.Vector:
+gdomain.QuestionB
+dataAccess.DataAccess

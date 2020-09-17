@@ -1,83 +1,38 @@
 
-JdataAccess.DataAccess#lortuKuotaIrabzalea(Ldomain/Question;)Ldomain/Kuota;I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java© ©(!"6*Ô
+:dataAccess.DataAccess#workerIzenaOndo(Ljava/lang/String;)ZI
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaë ë("3*Å
+2I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaî î(	v
+t
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaî î(
+%0java.io.PrintStream"__id*
+""„‡
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaî î(
+
+%1void"0java.io.PrintStream#println(Ljava/lang/String;)V*
+
+%0java.io.PrintStream*
+
+izenajava.lang.String2println(Ljava/lang/String;)"S
+I
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaï ï(
+""*«
 3I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java∞ ∞(ª∏
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaí í(o
+m
 I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java∞ ∞(
-%6domain.Kuota")java.util.Vector#get(I)Ljava/lang/Object;*
-
-listaKjava.util.Vector*
-""2get(I)"a
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java∞ ∞(
-
-%6domain.Kuota*Æ
-4I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaØ Ø(ª∏
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaØ Ø(
-%3domain.Kuota")java.util.Vector#get(I)Ljava/lang/Object;*
-
-listaKjava.util.Vector*
-""2get(I)∑¥
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaØ Ø( 
-%4java.lang.String"+domain.Kuota#getEmaitza()Ljava/lang/String;*
-
-%3domain.Kuota2getEmaitza()›⁄
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaØ Ø(-
-%5boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
-
-%4java.lang.String*
-
-emaijava.lang.String2equals(Ljava/lang/Object;)*
-3
-5*Ú
-5I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÆ Æ(ôñ
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaÆ Æ(	
-%2int"java.util.Vector#size()I*
-
-listaKjava.util.Vector2size()*
-4
-1*ÿ
-6I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java™ ™(q
-o
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java´ ´(*
-qdomain.Question"__id*
-""∫∑
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java¨ ¨(
-%0java.lang.String"-domain.Question#getResult()Ljava/lang/String;*
-
-qdomain.Question2getResult()à
-Ö
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java¨ ¨(
-emaijava.lang.String"__id*
-
-%0java.lang.String∫∑
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java≠ ≠($
-%1java.util.Vector"-domain.Question#getKuotak()Ljava/util/Vector;*
-
-qdomain.Question2getKuotak()ä
-á
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java≠ ≠(%
-listaKjava.util.Vector"__id*
-
-%1java.util.Vector*
-5*£
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaí í()
+wdomain.Worker"__id*
+""*
+2
+1*£
 1I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java¥	 ¥("S
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaó
+ ó("S
 I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.java¥ ¥(
-"":
-gdomain.QuestionB
+=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaó ó(
+"":
+izenajava.lang.StringB
 dataAccess.DataAccess

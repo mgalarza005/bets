@@ -1,64 +1,26 @@
 
-XbusinessLogic.BLFacadeImplementation#lortuErabiltzailea(Ljava/lang/String;)Ldomain/User;X
-LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaû û("startingBlock*¢
-startingBlockX
-LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaû û(+¢
-ü
-X
-LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaù ù(
-
-%4"
-__annotate*
-java.lang.Override*
-
-usrjava.lang.Stringå
-â
-X
-LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaû' û(*
-usrjava.lang.String"__annotation*
-
-%4*
-1*ü
-
-1X
-LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaü ü((ëé
-X
-LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaü ü(&
-%0dataAccess.DataAccess"dataAccess.DataAccess£
-†
-X
-LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaü ü((
-%1"dataAccess.DataAccess#<init>()V*
-
-%0dataAccess.DataAccess¶
-£
-X
-LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaü ü()"
-	dbmanagerdataAccess.DataAccess"__id*
-
-%0dataAccess.DataAccess§°
-X
-LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java†	 †(*
-%2domain.User"IdataAccess.DataAccess#lortuErabiltzailea(Ljava/lang/String;)Ldomain/User;*$
-"
-	dbmanagerdataAccess.DataAccess*
-
-usrjava.lang.String2&lortuErabiltzailea(Ljava/lang/String;)ä
-á
-X
-LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java† †(+
-udomain.User"__id*
-
-%2domain.User∏µ
-X
-LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java° °(
-
-%3void"dataAccess.DataAccess#close()V*$
-"
-	dbmanagerdataAccess.DataAccess2close()"n
-X
-LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.java¢ ¢(
-
-udomain.User:
-usrjava.lang.StringB(&
+CbusinessLogic.BLFacadeImplementation#adinaOndo(Ljava/lang/String;)ZV
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javao o("3*Ω
+2V
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javar r("`
+V
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javar r(
+""*±
+3V
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaq q(À
+»
+V
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javaq q("	
+%0int"/java.lang.Integer#parseInt(Ljava/lang/String;)I*"
+java.lang.Integer*
+
+adinajava.lang.String*
+2
+1*Ω
+1V
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javas	 s("`
+V
+LC:/Users/MIKEL1/git/Bets/Bets1/src/businessLogic/BLFacadeImplementation.javas s(
+"":
+adinajava.lang.StringB(&
 $businessLogic.BLFacadeImplementation

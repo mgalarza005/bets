@@ -1,24 +1,16 @@
 
-Fdomain.IntegerAdapter#unmarshal(Ljava/lang/String;)Ljava/lang/Integer;G
-=C:/Users/MIKEL1/git/Bets/Bets1/src/domain/IntegerAdapter.java	 	("1*ß
-1G
-=C:/Users/MIKEL1/git/Bets/Bets1/src/domain/IntegerAdapter.java
- 
-(¸
-µ
-G
-=C:/Users/MIKEL1/git/Bets/Bets1/src/domain/IntegerAdapter.java
- 
-("	
-%0int"/java.lang.Integer#parseInt(Ljava/lang/String;)I*"
-java.lang.Integer*
-
-sjava.lang.String"V
-G
-=C:/Users/MIKEL1/git/Bets/Bets1/src/domain/IntegerAdapter.java
- 
-(#
-	
-%0int:
-sjava.lang.StringB
-domain.IntegerAdapter
+4domain.Kuota#getLortutakoEtekina()Ljava/lang/Double;>
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Kuota.javaH H(""1*«
+1>
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Kuota.javaI	 I(‰
+†
+>
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Kuota.javaI	 I(
+%0java.lang.Double"__id*&*$
+domain.Kuota"
+lortutakoEtekina"Z
+>
+4C:/Users/MIKEL1/git/Bets/Bets1/src/domain/Kuota.javaI I(
+
+%0java.lang.DoubleB
+domain.Kuota

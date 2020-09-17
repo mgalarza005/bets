@@ -1,37 +1,16 @@
 
-4dataAccess.DataAccess#izenaOndo(Ljava/lang/String;)ZI
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaà à("3*Å
-2I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaå å(	v
-t
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaå å(
-%0java.io.PrintStream"__id*
-""„‡
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaå å(
-
-%1void"0java.io.PrintStream#println(Ljava/lang/String;)V*
-
-%0java.io.PrintStream*
-
-izenajava.lang.String2println(Ljava/lang/String;)"S
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaç ç(
-""*»
-3I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaä ä(p
-n
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaä ä()
-erabdomain.User"__id*
-""*
-2
-1*£
-1I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaè	 è("S
-I
-=C:/Users/MIKEL1/git/Bets/Bets1/src/dataAccess/DataAccess.javaè è(
-"":
-izenajava.lang.StringB
-dataAccess.DataAccess
+>configuration.ConfigXML#getInstance()Lconfiguration/ConfigXML;K
+?C:/Users/MIKEL1/git/Bets/Bets1/src/configuration/ConfigXML.javaè è($"1*Ê
+1K
+?C:/Users/MIKEL1/git/Bets/Bets1/src/configuration/ConfigXML.javaê	 ê(£
+†
+K
+?C:/Users/MIKEL1/git/Bets/Bets1/src/configuration/ConfigXML.javaê	 ê(
+%0configuration.ConfigXML"__id*,**
+configuration.ConfigXML"
+theInstance"n
+K
+?C:/Users/MIKEL1/git/Bets/Bets1/src/configuration/ConfigXML.javaê ê(
+
+%0configuration.ConfigXMLB"
+configuration.ConfigXML
