@@ -3,5 +3,5 @@ projectKey=mgalarza005
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.12128
 dashboardUrl=https://sonarcloud.io/dashboard?id=mgalarza005
-ceTaskId=AXSbh5v0TaapZTy3ScFa
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXSbh5v0TaapZTy3ScFa
+ceTaskId=AXSblZZQv3iNU6xnZ9Di
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXSblZZQv3iNU6xnZ9Di
