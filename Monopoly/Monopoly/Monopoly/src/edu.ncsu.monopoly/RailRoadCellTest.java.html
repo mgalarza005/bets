@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>RailRoadCellTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">JUnitCore (21-sep-2020 14:17:49)</a> &gt; <a href="../../index.html" class="el_group">Monopoly</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">edu.ncsu.monopoly</a> &gt; <span class="el_source">RailRoadCellTest.java</span></div><h1>RailRoadCellTest.java</h1><pre class="source lang-java linenums">package edu.ncsu.monopoly;
+
+import junit.framework.TestCase;
+
+<span class="nc" id="L5">public class RailRoadCellTest extends TestCase {</span>
+	GameMaster gameMaster;
+	
+	protected void setUp() {
+<span class="nc" id="L9">		gameMaster = GameMaster.instance();</span>
+<span class="nc" id="L10">		gameMaster.setGameBoard(new GameBoardRailRoad());</span>
+<span class="nc" id="L11">		gameMaster.setNumberOfPlayers(2);</span>
+<span class="nc" id="L12">		gameMaster.reset();</span>
+<span class="nc" id="L13">		gameMaster.setGUI(new MockGUI());</span>
+<span class="nc" id="L14">	}</span>
+	
+	public void testPlayerAction() {
+<span class="nc" id="L17">		RailRoadCell cell =</span>
+<span class="nc" id="L18">			(RailRoadCell) gameMaster.getGameBoard().queryCell(&quot;Railroad A&quot;);</span>
+<span class="nc" id="L19">		int cellIndex = gameMaster.getGameBoard().queryCellIndex(&quot;Railroad A&quot;);</span>
+<span class="nc" id="L20">		gameMaster.movePlayer(0, cellIndex);</span>
+<span class="nc" id="L21">		gameMaster.getPlayer(0).purchase();</span>
+<span class="nc" id="L22">		gameMaster.switchTurn();</span>
+<span class="nc" id="L23">		gameMaster.movePlayer(1, cellIndex);</span>
+<span class="nc" id="L24">		cell.playAction();</span>
+<span class="nc" id="L25">		assertEquals(</span>
+<span class="nc" id="L26">				1500 - cell.getRent(),</span>
+<span class="nc" id="L27">				gameMaster.getPlayer(1).getMoney());</span>
+<span class="nc" id="L28">		assertEquals(</span>
+<span class="nc" id="L29">				1300 + cell.getRent(),</span>
+<span class="nc" id="L30">				gameMaster.getPlayer(0).getMoney());</span>
+<span class="nc" id="L31">	}</span>
+	
+	public void testPurchaseRailroad() {
+<span class="nc" id="L34">		assertEquals(0, gameMaster.getPlayer(0).numberOfRR());</span>
+<span class="nc" id="L35">		int cellIndex = gameMaster.getGameBoard().queryCellIndex(&quot;Railroad A&quot;);</span>
+<span class="nc" id="L36">		gameMaster.movePlayer(0, cellIndex);</span>
+<span class="nc" id="L37">		gameMaster.getPlayer(0).purchase();</span>
+<span class="nc" id="L38">		assertEquals(1300, gameMaster.getPlayer(0).getMoney());</span>
+<span class="nc" id="L39">		assertEquals(1, gameMaster.getPlayer(0).numberOfRR());</span>
+<span class="nc" id="L40">	}</span>
+
+	public void testRent() {
+<span class="nc" id="L43">		RailRoadCell rr1 =</span>
+<span class="nc" id="L44">			(RailRoadCell) gameMaster.getGameBoard().queryCell(&quot;Railroad A&quot;);</span>
+<span class="nc" id="L45">		int cellIndex1 = gameMaster.getGameBoard().queryCellIndex(&quot;Railroad A&quot;);</span>
+<span class="nc" id="L46">		gameMaster.movePlayer(0, cellIndex1);</span>
+<span class="nc" id="L47">		gameMaster.getPlayer(0).purchase();</span>
+<span class="nc" id="L48">		assertEquals(25, rr1.getRent());</span>
+
+<span class="nc" id="L50">		RailRoadCell rr2 =</span>
+<span class="nc" id="L51">			(RailRoadCell) gameMaster.getGameBoard().queryCell(&quot;Railroad B&quot;);</span>
+<span class="nc" id="L52">		int cellIndex2 = gameMaster.getGameBoard().queryCellIndex(&quot;Railroad B&quot;);</span>
+<span class="nc" id="L53">		gameMaster.movePlayer(0, cellIndex2 - cellIndex1);</span>
+<span class="nc" id="L54">		gameMaster.getPlayer(0).purchase();</span>
+<span class="nc" id="L55">		assertEquals(50, rr1.getRent());</span>
+<span class="nc" id="L56">		assertEquals(50, rr2.getRent());</span>
+<span class="nc" id="L57">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span>JUnitCore (21-sep-2020 14:17:49)</div></body></html>

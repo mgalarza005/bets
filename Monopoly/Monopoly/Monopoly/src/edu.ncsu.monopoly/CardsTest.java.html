@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>CardsTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">JUnitCore (21-sep-2020 14:17:49)</a> &gt; <a href="../../index.html" class="el_group">Monopoly</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">edu.ncsu.monopoly</a> &gt; <span class="el_source">CardsTest.java</span></div><h1>CardsTest.java</h1><pre class="source lang-java linenums">package edu.ncsu.monopoly;
+
+import junit.framework.TestCase;
+
+<span class="nc" id="L5">public class CardsTest extends TestCase {</span>
+    Card ccCard, chanceCard;
+    
+    GameMaster gameMaster;
+
+    protected void setUp() {
+<span class="nc" id="L11">        gameMaster = GameMaster.instance();</span>
+<span class="nc" id="L12">        gameMaster.setGameBoard(new GameBoardCCGainMoney());</span>
+<span class="nc" id="L13">        gameMaster.setNumberOfPlayers(1);</span>
+<span class="nc" id="L14">        gameMaster.reset();</span>
+<span class="nc" id="L15">        gameMaster.setGUI(new MockGUI());</span>
+<span class="nc" id="L16">        ccCard = new MoneyCard(&quot;Get 50 dollars&quot;, 50, Card.TYPE_CC);</span>
+<span class="nc" id="L17">        chanceCard = new MoneyCard(&quot;Lose 50 dollars&quot;, -50, Card.TYPE_CHANCE);</span>
+<span class="nc" id="L18">        gameMaster.getGameBoard().addCard(ccCard);</span>
+<span class="nc" id="L19">    }</span>
+    
+    public void testCardType() {
+<span class="nc" id="L22">        Card card = gameMaster.drawCCCard();</span>
+<span class="nc" id="L23">        assertEquals(Card.TYPE_CC, ccCard.getCardType());</span>
+<span class="nc" id="L24">        card = gameMaster.drawChanceCard();</span>
+<span class="nc" id="L25">        assertEquals(Card.TYPE_CHANCE, chanceCard.getCardType());</span>
+<span class="nc" id="L26">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span>JUnitCore (21-sep-2020 14:17:49)</div></body></html>

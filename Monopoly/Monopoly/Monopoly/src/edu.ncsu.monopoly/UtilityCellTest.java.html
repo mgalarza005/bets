@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>UtilityCellTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">JUnitCore (21-sep-2020 14:17:49)</a> &gt; <a href="../../index.html" class="el_group">Monopoly</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">edu.ncsu.monopoly</a> &gt; <span class="el_source">UtilityCellTest.java</span></div><h1>UtilityCellTest.java</h1><pre class="source lang-java linenums">package edu.ncsu.monopoly;
+
+import junit.framework.TestCase;
+
+<span class="nc" id="L5">public class UtilityCellTest extends TestCase {</span>
+	GameMaster gameMaster;
+	
+	protected void setUp() {
+<span class="nc" id="L9">		gameMaster = GameMaster.instance();</span>
+<span class="nc" id="L10">		gameMaster.setGameBoard(new GameBoardUtility());</span>
+<span class="nc" id="L11">		gameMaster.setNumberOfPlayers(2);</span>
+<span class="nc" id="L12">		gameMaster.reset();</span>
+<span class="nc" id="L13">		gameMaster.setGUI(new MockGUI());</span>
+<span class="nc" id="L14">	}</span>
+    
+    public void testMonopoly() {
+<span class="nc" id="L17">        int u1CellIndex = gameMaster.getGameBoard().queryCellIndex(&quot;Utility 1&quot;);</span>
+<span class="nc" id="L18">        gameMaster.movePlayer(0, u1CellIndex);</span>
+<span class="nc" id="L19">        gameMaster.getPlayer(0).purchase();</span>
+<span class="nc" id="L20">        int u2CellIndex = gameMaster.getGameBoard().queryCellIndex(&quot;Utility 2&quot;);</span>
+<span class="nc" id="L21">        gameMaster.movePlayer(0, u2CellIndex - u1CellIndex);</span>
+<span class="nc" id="L22">        gameMaster.getPlayer(0).purchase();</span>
+<span class="nc" id="L23">        assertFalse(gameMaster.getPlayer(0).canBuyHouse());</span>
+<span class="nc" id="L24">    }</span>
+	
+	public void testPlayerAction() {
+<span class="nc" id="L27">		UtilityCell cell =</span>
+<span class="nc" id="L28">			(UtilityCell) gameMaster.getGameBoard().queryCell(&quot;Utility 1&quot;);</span>
+<span class="nc" id="L29">		int cellIndex = gameMaster.getGameBoard().queryCellIndex(&quot;Utility 1&quot;);</span>
+<span class="nc" id="L30">		gameMaster.movePlayer(0, cellIndex);</span>
+<span class="nc" id="L31">		gameMaster.getPlayer(0).purchase();</span>
+<span class="nc" id="L32">		gameMaster.switchTurn();</span>
+<span class="nc" id="L33">		gameMaster.movePlayer(1, cellIndex);</span>
+<span class="nc" id="L34">		cell.playAction();</span>
+<span class="nc" id="L35">		int diceRoll = gameMaster.getUtilDiceRoll();</span>
+<span class="nc" id="L36">		assertEquals(</span>
+<span class="nc" id="L37">				1500 - cell.getRent(diceRoll),</span>
+<span class="nc" id="L38">				gameMaster.getPlayer(1).getMoney());</span>
+<span class="nc" id="L39">		assertEquals(</span>
+<span class="nc" id="L40">				1350 + cell.getRent(diceRoll),</span>
+<span class="nc" id="L41">				gameMaster.getPlayer(0).getMoney());</span>
+<span class="nc" id="L42">	}</span>
+
+	public void testPurchaseUtility() {
+<span class="nc" id="L45">		assertEquals(0, gameMaster.getPlayer(0).numberOfUtil());</span>
+<span class="nc" id="L46">		int cellIndex = gameMaster.getGameBoard().queryCellIndex(&quot;Utility 1&quot;);</span>
+<span class="nc" id="L47">		gameMaster.movePlayer(0, cellIndex);</span>
+<span class="nc" id="L48">		gameMaster.getPlayer(0).purchase();</span>
+<span class="nc" id="L49">		assertEquals(1350, gameMaster.getPlayer(0).getMoney());</span>
+<span class="nc" id="L50">		assertEquals(1, gameMaster.getPlayer(0).numberOfUtil());</span>
+<span class="nc" id="L51">	}</span>
+
+	public void testRent() {
+<span class="nc" id="L54">		UtilityCell u1 =</span>
+<span class="nc" id="L55">			(UtilityCell) gameMaster.getGameBoard().queryCell(&quot;Utility 1&quot;);</span>
+<span class="nc" id="L56">		int cellIndex1 = gameMaster.getGameBoard().queryCellIndex(&quot;Utility 1&quot;);</span>
+<span class="nc" id="L57">		gameMaster.movePlayer(0, cellIndex1);</span>
+<span class="nc" id="L58">		gameMaster.getPlayer(0).purchase();</span>
+<span class="nc" id="L59">		assertEquals(40, u1.getRent(10));</span>
+
+<span class="nc" id="L61">		UtilityCell u2 =</span>
+<span class="nc" id="L62">			(UtilityCell) gameMaster.getGameBoard().queryCell(&quot;Utility 2&quot;);</span>
+<span class="nc" id="L63">		int cellIndex2 = gameMaster.getGameBoard().queryCellIndex(&quot;Utility 2&quot;);</span>
+<span class="nc" id="L64">		gameMaster.movePlayer(0, cellIndex2 - cellIndex1);</span>
+<span class="nc" id="L65">		gameMaster.getPlayer(0).purchase();</span>
+<span class="nc" id="L66">		assertEquals(100, u1.getRent(10));</span>
+<span class="nc" id="L67">		assertEquals(100, u2.getRent(10));</span>
+<span class="nc" id="L68">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span>JUnitCore (21-sep-2020 14:17:49)</div></body></html>

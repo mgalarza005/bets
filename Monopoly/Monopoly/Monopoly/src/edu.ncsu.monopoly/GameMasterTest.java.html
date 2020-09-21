@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>GameMasterTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">JUnitCore (21-sep-2020 14:17:49)</a> &gt; <a href="../../index.html" class="el_group">Monopoly</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">edu.ncsu.monopoly</a> &gt; <span class="el_source">GameMasterTest.java</span></div><h1>GameMasterTest.java</h1><pre class="source lang-java linenums">package edu.ncsu.monopoly;
+
+import java.util.ArrayList;
+
+import junit.framework.TestCase;
+
+<span class="nc" id="L7">public class GameMasterTest extends TestCase {</span>
+
+	GameMaster gameMaster;
+	
+	protected void setUp() throws Exception {
+<span class="nc" id="L12">		gameMaster = GameMaster.instance();</span>
+<span class="nc" id="L13">		gameMaster.setGameBoard(new GameBoardFull());</span>
+<span class="nc" id="L14">		gameMaster.setNumberOfPlayers(2);</span>
+<span class="nc" id="L15">        gameMaster.getPlayer(0).setName(&quot;Player 1&quot;);</span>
+<span class="nc" id="L16">        gameMaster.getPlayer(1).setName(&quot;Player 2&quot;);</span>
+<span class="nc" id="L17">		gameMaster.reset();</span>
+<span class="nc" id="L18">		gameMaster.setTestMode(true);</span>
+<span class="nc" id="L19">        gameMaster.setGUI(new MockGUI());</span>
+<span class="nc" id="L20">        gameMaster.startGame();</span>
+<span class="nc" id="L21">	}</span>
+	
+	public void testInit() {
+<span class="nc" id="L24">		assertEquals(gameMaster.getInitAmountOfMoney(),</span>
+<span class="nc" id="L25">				gameMaster.getPlayer(0).getMoney());</span>
+<span class="nc" id="L26">	}</span>
+	
+	public void testReset() {
+<span class="nc" id="L29">		gameMaster.movePlayer(0, 3);</span>
+<span class="nc" id="L30">		gameMaster.movePlayer(1, 4);</span>
+<span class="nc" id="L31">		gameMaster.reset();</span>
+<span class="nc bnc" id="L32" title="All 2 branches missed.">		for(int i = 0; i &lt; gameMaster.getNumberOfPlayers(); i++) {</span>
+<span class="nc" id="L33">			Player player = gameMaster.getPlayer(i);</span>
+<span class="nc" id="L34">			assertEquals(&quot;Go&quot;, player.getPosition().getName());</span>
+		}
+<span class="nc" id="L36">		assertEquals(0, gameMaster.getTurn());</span>
+<span class="nc" id="L37">	}</span>
+    
+    public void testTradeProcess() {
+<span class="nc" id="L40">        MonopolyGUI gui = gameMaster.getGUI();</span>
+<span class="nc" id="L41">        assertTrue(gui.isTradeButtonEnabled(0));</span>
+<span class="nc" id="L42">        assertFalse(gui.isTradeButtonEnabled(1));</span>
+<span class="nc" id="L43">        gameMaster.movePlayer(0, 1);</span>
+<span class="nc" id="L44">        assertFalse(gui.isTradeButtonEnabled(0));</span>
+<span class="nc" id="L45">        assertFalse(gui.isTradeButtonEnabled(1));</span>
+<span class="nc" id="L46">        gameMaster.getCurrentPlayer().purchase();</span>
+<span class="nc" id="L47">        assertEquals(gameMaster.getGameBoard().getCell(1),gameMaster.getCurrentPlayer().getAllProperties()[0]);</span>
+<span class="nc" id="L48">        gameMaster.btnEndTurnClicked();</span>
+<span class="nc" id="L49">        TradeDialog dialog = gui.openTradeDialog();</span>
+<span class="nc" id="L50">        assertEquals(1, gameMaster.getNumberOfSellers());</span>
+<span class="nc" id="L51">        ArrayList sellerList = gameMaster.getSellerList();</span>
+<span class="nc" id="L52">        assertEquals(gameMaster.getPlayer(0), sellerList.get(0));</span>
+<span class="nc" id="L53">        TradeDeal deal = dialog.getTradeDeal();</span>
+<span class="nc" id="L54">        RespondDialog respond = gui.openRespondDialog(deal);</span>
+<span class="nc" id="L55">        Player player1 = gameMaster.getPlayer(0);</span>
+<span class="nc" id="L56">        Player player2 = gameMaster.getPlayer(1);</span>
+<span class="nc" id="L57">        assertTrue(respond.getResponse());</span>
+<span class="nc" id="L58">        gameMaster.completeTrade(deal);</span>
+<span class="nc" id="L59">        assertEquals(1440 + deal.getAmount(), player1.getMoney());</span>
+<span class="nc" id="L60">        assertEquals(1500 - deal.getAmount(), player2.getMoney());</span>
+<span class="nc" id="L61">        assertFalse(player1.checkProperty(deal.getPropertyName()));</span>
+<span class="nc" id="L62">        assertTrue(player2.checkProperty(deal.getPropertyName()));</span>
+<span class="nc" id="L63">    }</span>
+	
+	public void testTurn() {
+<span class="nc" id="L66">		assertEquals(0, gameMaster.getTurn());</span>
+<span class="nc" id="L67">		gameMaster.switchTurn();</span>
+<span class="nc" id="L68">		assertEquals(1, gameMaster.getTurn());</span>
+<span class="nc" id="L69">		gameMaster.switchTurn();</span>
+<span class="nc" id="L70">		assertEquals(0, gameMaster.getTurn());</span>
+<span class="nc" id="L71">	}</span>
+	
+	public void testButtonGetOutOfJailClicked() {
+<span class="nc" id="L74">		MonopolyGUI gui = gameMaster.getGUI();</span>
+<span class="nc" id="L75">		gameMaster.movePlayer(0,30);</span>
+<span class="nc" id="L76">		gameMaster.btnEndTurnClicked();</span>
+<span class="nc" id="L77">		assertEquals(&quot;Jail&quot;, gameMaster.getPlayer(0).getPosition().getName());</span>
+<span class="nc" id="L78">		gameMaster.movePlayer(1,2);</span>
+<span class="nc" id="L79">		gameMaster.btnEndTurnClicked();</span>
+<span class="nc" id="L80">		assertTrue(gui.isGetOutOfJailButtonEnabled());</span>
+<span class="nc" id="L81">		assertTrue(gameMaster.getPlayer(0).isInJail());</span>
+<span class="nc" id="L82">		gameMaster.btnGetOutOfJailClicked();</span>
+<span class="nc" id="L83">		assertFalse(gameMaster.getPlayer(0).isInJail());</span>
+<span class="nc" id="L84">		assertEquals(1450,gameMaster.getPlayer(0).getMoney());</span>
+<span class="nc" id="L85">	}</span>
+	
+	public void testButtonPurchasePropertyClicked() {
+<span class="nc" id="L88">		MonopolyGUI gui = gameMaster.getGUI();</span>
+<span class="nc" id="L89">		gameMaster.movePlayer(0,1);</span>
+<span class="nc" id="L90">		gameMaster.btnPurchasePropertyClicked();</span>
+<span class="nc" id="L91">		assertEquals(gameMaster.getGameBoard().getCell(1), gameMaster.getCurrentPlayer().getAllProperties()[0]);</span>
+<span class="nc" id="L92">		assertEquals(1440,gameMaster.getCurrentPlayer().getMoney());</span>
+<span class="nc" id="L93">	}</span>
+	
+	public void testButtonRollDiceClicked() {
+<span class="nc" id="L96">		gameMaster.reset();</span>
+<span class="nc" id="L97">		MonopolyGUI gui = gameMaster.getGUI();</span>
+<span class="nc" id="L98">		gameMaster.btnRollDiceClicked();</span>
+<span class="nc" id="L99">		assertEquals(0,gameMaster.getCurrentPlayerIndex());</span>
+<span class="nc" id="L100">		assertEquals(gameMaster.getGameBoard().getCell(5), gameMaster.getPlayer(0).getPosition());</span>
+<span class="nc" id="L101">	}</span>
+	
+	public void testButtonTradeClicked() {
+<span class="nc" id="L104">		MonopolyGUI gui = gameMaster.getGUI();</span>
+<span class="nc" id="L105">		gameMaster.movePlayer(0,1);</span>
+<span class="nc" id="L106">		gameMaster.getCurrentPlayer().purchase();</span>
+<span class="nc" id="L107">		gameMaster.btnEndTurnClicked();</span>
+<span class="nc" id="L108">		gameMaster.btnTradeClicked();</span>
+<span class="nc" id="L109">		assertEquals(gameMaster.getGameBoard().getCell(1),gameMaster.getCurrentPlayer().getAllProperties()[0]);</span>
+<span class="nc" id="L110">		assertEquals(1640,gameMaster.getPlayer(0).getMoney());</span>
+<span class="nc" id="L111">		assertEquals(1300,gameMaster.getPlayer(1).getMoney());</span>
+<span class="nc" id="L112">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span>JUnitCore (21-sep-2020 14:17:49)</div></body></html>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>GameboardTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">JUnitCore (21-sep-2020 14:17:49)</a> &gt; <a href="../../index.html" class="el_group">Monopoly</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">edu.ncsu.monopoly</a> &gt; <span class="el_source">GameboardTest.java</span></div><h1>GameboardTest.java</h1><pre class="source lang-java linenums">package edu.ncsu.monopoly;
+
+import junit.framework.TestCase;
+
+
+<span class="nc" id="L6">public class GameboardTest extends TestCase {</span>
+
+	Cell cell;
+	GameBoard gameBoard;
+	
+	protected void setUp() throws Exception {
+<span class="nc" id="L12">		gameBoard = new GameBoard();</span>
+<span class="nc" id="L13">		cell = new PropertyCell();</span>
+<span class="nc" id="L14">		cell.setName(&quot;TempCell&quot;);</span>
+<span class="nc" id="L15">	}</span>
+
+	public void testAddCell() {
+<span class="nc" id="L18">		assertEquals(1, gameBoard.getCellNumber());</span>
+<span class="nc" id="L19">		gameBoard.addCell(cell);</span>
+<span class="nc" id="L20">		assertEquals(2, gameBoard.getCellNumber());</span>
+<span class="nc" id="L21">	}</span>
+	
+	public void testCellsForMonopoly() {
+<span class="nc" id="L24">		GameBoard gb = new SimpleGameBoard();</span>
+<span class="nc" id="L25">		PropertyCell[] properties = gb.getPropertiesInMonopoly(&quot;blue&quot;);</span>
+<span class="nc" id="L26">		assertEquals(&quot;Blue 1&quot;, properties[0].getName());</span>
+<span class="nc" id="L27">		assertEquals(&quot;Blue 2&quot;, properties[1].getName());</span>
+<span class="nc" id="L28">		assertEquals(&quot;Blue 3&quot;, properties[2].getName());</span>
+<span class="nc" id="L29">		assertEquals(3, properties.length);</span>
+<span class="nc" id="L30">	}</span>
+	
+	public void testPropertyNumberForColor() {
+<span class="nc" id="L33">		PropertyCell cell1 = new PropertyCell();</span>
+<span class="nc" id="L34">		cell1.setName(&quot;Blue 1&quot;);</span>
+<span class="nc" id="L35">		cell1.setColorGroup(&quot;blue&quot;);</span>
+<span class="nc" id="L36">		PropertyCell cell2 = new PropertyCell();</span>
+<span class="nc" id="L37">		cell2.setName(&quot;Blue 2&quot;);</span>
+<span class="nc" id="L38">		cell2.setColorGroup(&quot;blue&quot;);</span>
+<span class="nc" id="L39">		PropertyCell cell3 = new PropertyCell();</span>
+<span class="nc" id="L40">		cell3.setName(&quot;Green 1&quot;);</span>
+<span class="nc" id="L41">		cell3.setColorGroup(&quot;green&quot;);</span>
+		
+<span class="nc" id="L43">		gameBoard.addCell(cell1);</span>
+<span class="nc" id="L44">		gameBoard.addCell(cell2);</span>
+<span class="nc" id="L45">		gameBoard.addCell(cell3);</span>
+<span class="nc" id="L46">		assertEquals(2, gameBoard.getPropertyNumberForColor(&quot;blue&quot;));</span>
+<span class="nc" id="L47">		assertEquals(1, gameBoard.getPropertyNumberForColor(&quot;green&quot;));</span>
+<span class="nc" id="L48">	}</span>
+	
+	public void testQueryCell() {
+<span class="nc" id="L51">		gameBoard.addCell(cell);</span>
+<span class="nc" id="L52">		assertSame(cell,gameBoard.queryCell(&quot;TempCell&quot;));</span>
+<span class="nc" id="L53">	}</span>
+	
+	public void testQueryCellIndex() {
+<span class="nc" id="L56">		gameBoard.addCell(cell);</span>
+<span class="nc" id="L57">		assertEquals(0,gameBoard.queryCellIndex(&quot;Go&quot;));</span>
+<span class="nc" id="L58">		assertEquals(1,gameBoard.queryCellIndex(&quot;TempCell&quot;));</span>
+<span class="nc" id="L59">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span>JUnitCore (21-sep-2020 14:17:49)</div></body></html>

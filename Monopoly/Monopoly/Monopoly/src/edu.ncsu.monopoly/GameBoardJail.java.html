@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>GameBoardJail.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">JUnitCore (21-sep-2020 14:17:49)</a> &gt; <a href="../../index.html" class="el_group">Monopoly</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">edu.ncsu.monopoly</a> &gt; <span class="el_source">GameBoardJail.java</span></div><h1>GameBoardJail.java</h1><pre class="source lang-java linenums">package edu.ncsu.monopoly;
+
+public class GameBoardJail extends GameBoard {
+	public GameBoardJail() {
+<span class="nc" id="L5">		super();</span>
+<span class="nc" id="L6">		PropertyCell blue1 = new PropertyCell();</span>
+<span class="nc" id="L7">		PropertyCell blue2 = new PropertyCell();</span>
+<span class="nc" id="L8">		PropertyCell blue3 = new PropertyCell();</span>
+<span class="nc" id="L9">		PropertyCell green1 = new PropertyCell();</span>
+<span class="nc" id="L10">		PropertyCell green2 = new PropertyCell();</span>
+<span class="nc" id="L11">		JailCell jail = new JailCell();</span>
+<span class="nc" id="L12">		GoToJailCell goToJail = new GoToJailCell();</span>
+		
+<span class="nc" id="L14">		blue1.setName(&quot;Blue 1&quot;);</span>
+<span class="nc" id="L15">		blue2.setName(&quot;Blue 2&quot;);</span>
+<span class="nc" id="L16">		blue3.setName(&quot;Blue 3&quot;);</span>
+<span class="nc" id="L17">		green1.setName(&quot;Green 1&quot;);</span>
+<span class="nc" id="L18">		green2.setName(&quot;Green 2&quot;);</span>
+		
+<span class="nc" id="L20">		blue1.setColorGroup(&quot;blue&quot;);</span>
+<span class="nc" id="L21">		blue2.setColorGroup(&quot;blue&quot;);</span>
+<span class="nc" id="L22">		blue3.setColorGroup(&quot;blue&quot;);</span>
+<span class="nc" id="L23">		green1.setColorGroup(&quot;green&quot;);</span>
+<span class="nc" id="L24">		green2.setColorGroup(&quot;green&quot;);</span>
+		
+<span class="nc" id="L26">		blue1.setPrice(100);</span>
+<span class="nc" id="L27">		blue2.setPrice(100);</span>
+<span class="nc" id="L28">		blue3.setPrice(1450);</span>
+<span class="nc" id="L29">		green1.setPrice(200);</span>
+<span class="nc" id="L30">		green2.setPrice(240);</span>
+		
+<span class="nc" id="L32">		blue1.setRent(10);</span>
+<span class="nc" id="L33">		blue2.setRent(10);</span>
+<span class="nc" id="L34">		blue3.setRent(10);</span>
+<span class="nc" id="L35">		green1.setRent(20);</span>
+<span class="nc" id="L36">		green2.setRent(20);</span>
+		
+<span class="nc" id="L38">		blue1.setHousePrice(50);</span>
+<span class="nc" id="L39">		blue2.setHousePrice(50);</span>
+<span class="nc" id="L40">		blue3.setHousePrice(50);</span>
+<span class="nc" id="L41">		green1.setHousePrice(70);</span>
+<span class="nc" id="L42">		green2.setHousePrice(70);</span>
+		
+<span class="nc" id="L44">		addCell(blue1);</span>
+<span class="nc" id="L45">		addCell(jail);</span>
+<span class="nc" id="L46">		addCell(blue2);</span>
+<span class="nc" id="L47">		addCell(blue3);</span>
+<span class="nc" id="L48">		addCell(green1);</span>
+<span class="nc" id="L49">		addCell(goToJail);</span>
+<span class="nc" id="L50">		addCell(green2);</span>
+<span class="nc" id="L51">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span>JUnitCore (21-sep-2020 14:17:49)</div></body></html>

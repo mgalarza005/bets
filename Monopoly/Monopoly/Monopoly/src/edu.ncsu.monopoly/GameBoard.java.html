@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>GameBoard.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">JUnitCore (21-sep-2020 14:17:49)</a> &gt; <a href="../../index.html" class="el_group">Monopoly</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">edu.ncsu.monopoly</a> &gt; <span class="el_source">GameBoard.java</span></div><h1>GameBoard.java</h1><pre class="source lang-java linenums">package edu.ncsu.monopoly;
+
+import java.util.ArrayList;
+import java.util.Hashtable;
+
+public class GameBoard {
+
+<span class="nc" id="L8">	private ArrayList cells = new ArrayList();</span>
+<span class="nc" id="L9">    private ArrayList chanceCards = new ArrayList();</span>
+	//the key of colorGroups is the name of the color group.
+<span class="nc" id="L11">	private Hashtable colorGroups = new Hashtable();</span>
+<span class="nc" id="L12">	private ArrayList communityChestCards = new ArrayList();</span>
+	private GameMaster gameMaster;
+	
+<span class="nc" id="L15">	public GameBoard() {</span>
+<span class="nc" id="L16">		Cell go = new GoCell();</span>
+<span class="nc" id="L17">		addCell(go);</span>
+<span class="nc" id="L18">	}</span>
+
+    public void addCard(Card card) {
+<span class="nc bnc" id="L21" title="All 2 branches missed.">        if(card.getCardType() == Card.TYPE_CC) {</span>
+<span class="nc" id="L22">            communityChestCards.add(card);</span>
+<span class="nc" id="L23">        } else {</span>
+<span class="nc" id="L24">            chanceCards.add(card);</span>
+        }
+<span class="nc" id="L26">    }</span>
+	
+	public void addCell(Cell cell) {
+<span class="nc" id="L29">		cells.add(cell);</span>
+<span class="nc" id="L30">	}</span>
+	
+	public void addCell(PropertyCell cell) {
+<span class="nc" id="L33">		int propertyNumber = getPropertyNumberForColor(cell.getColorGroup());</span>
+<span class="nc" id="L34">		colorGroups.put(cell.getColorGroup(), new Integer(propertyNumber + 1));</span>
+<span class="nc" id="L35">        cells.add(cell);</span>
+<span class="nc" id="L36">	}</span>
+
+    public Card drawCCCard() {
+<span class="nc" id="L39">        Card card = (Card)communityChestCards.get(0);</span>
+<span class="nc" id="L40">        communityChestCards.remove(0);</span>
+<span class="nc" id="L41">        addCard(card);</span>
+<span class="nc" id="L42">        return card;</span>
+    }
+
+    public Card drawChanceCard() {
+<span class="nc" id="L46">        Card card = (Card)chanceCards.get(0);</span>
+<span class="nc" id="L47">        chanceCards.remove(0);</span>
+<span class="nc" id="L48">        addCard(card);</span>
+<span class="nc" id="L49">        return card;</span>
+    }
+
+	public Cell getCell(int newIndex) {
+<span class="nc" id="L53">		return (Cell)cells.get(newIndex);</span>
+	}
+	
+	public int getCellNumber() {
+<span class="nc" id="L57">		return cells.size();</span>
+	}
+	
+	public PropertyCell[] getPropertiesInMonopoly(String color) {
+<span class="nc" id="L61">		PropertyCell[] monopolyCells = </span>
+<span class="nc" id="L62">			new PropertyCell[getPropertyNumberForColor(color)];</span>
+<span class="nc" id="L63">		int counter = 0;</span>
+<span class="nc bnc" id="L64" title="All 2 branches missed.">		for (int i = 0; i &lt; getCellNumber(); i++) {</span>
+<span class="nc" id="L65">			Cell c = getCell(i);</span>
+<span class="nc bnc" id="L66" title="All 2 branches missed.">			if(c instanceof PropertyCell) {</span>
+<span class="nc" id="L67">				PropertyCell pc = (PropertyCell)c;</span>
+<span class="nc bnc" id="L68" title="All 2 branches missed.">				if(pc.getColorGroup().equals(color)) {</span>
+<span class="nc" id="L69">					monopolyCells[counter] = pc;</span>
+<span class="nc" id="L70">					counter++;</span>
+				}
+			}
+		}
+<span class="nc" id="L74">		return monopolyCells;</span>
+	}
+	
+	public int getPropertyNumberForColor(String name) {
+<span class="nc" id="L78">		Integer number = (Integer)colorGroups.get(name);</span>
+<span class="nc bnc" id="L79" title="All 2 branches missed.">		if(number != null) {</span>
+<span class="nc" id="L80">			return number.intValue();</span>
+		}
+<span class="nc" id="L82">		return 0;</span>
+	}
+
+	public Cell queryCell(String string) {
+<span class="nc bnc" id="L86" title="All 2 branches missed.">		for(int i = 0; i &lt; cells.size(); i++){</span>
+<span class="nc" id="L87">			Cell temp = (Cell)cells.get(i); </span>
+<span class="nc bnc" id="L88" title="All 2 branches missed.">			if(temp.getName().equals(string)) {</span>
+<span class="nc" id="L89">				return temp;</span>
+			}
+		}
+<span class="nc" id="L92">		return null;</span>
+	}
+	
+	public int queryCellIndex(String string){
+<span class="nc bnc" id="L96" title="All 2 branches missed.">		for(int i = 0; i &lt; cells.size(); i++){</span>
+<span class="nc" id="L97">			Cell temp = (Cell)cells.get(i); </span>
+<span class="nc bnc" id="L98" title="All 2 branches missed.">			if(temp.getName().equals(string)) {</span>
+<span class="nc" id="L99">				return i;</span>
+			}
+		}
+<span class="nc" id="L102">		return -1;</span>
+	}
+
+    public void removeCards() {
+<span class="nc" id="L106">        communityChestCards.clear();</span>
+<span class="nc" id="L107">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span>JUnitCore (21-sep-2020 14:17:49)</div></body></html>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>GameBoard14.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">JUnitCore (21-sep-2020 14:17:49)</a> &gt; <a href="../../index.html" class="el_group">Monopoly</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">edu.ncsu.monopoly</a> &gt; <span class="el_source">GameBoard14.java</span></div><h1>GameBoard14.java</h1><pre class="source lang-java linenums">package edu.ncsu.monopoly;
+
+
+public class GameBoard14 extends GameBoard {
+	public GameBoard14() {
+<span class="nc" id="L6">		super();</span>
+<span class="nc" id="L7">		PropertyCell blue1 = new PropertyCell();</span>
+<span class="nc" id="L8">		PropertyCell blue2 = new PropertyCell();</span>
+<span class="nc" id="L9">		PropertyCell blue3 = new PropertyCell();</span>
+<span class="nc" id="L10">		PropertyCell green1 = new PropertyCell();</span>
+<span class="nc" id="L11">		PropertyCell green2 = new PropertyCell();</span>
+<span class="nc" id="L12">		PropertyCell green3 = new PropertyCell();</span>
+<span class="nc" id="L13">		PropertyCell red1 = new PropertyCell();</span>
+<span class="nc" id="L14">		PropertyCell red2 = new PropertyCell();</span>
+<span class="nc" id="L15">		PropertyCell red3 = new PropertyCell();</span>
+<span class="nc" id="L16">		PropertyCell purple1 = new PropertyCell();</span>
+<span class="nc" id="L17">		PropertyCell purple2 = new PropertyCell();</span>
+<span class="nc" id="L18">		PropertyCell yellow1 = new PropertyCell();</span>
+<span class="nc" id="L19">		PropertyCell yellow2 = new PropertyCell();</span>
+		
+<span class="nc" id="L21">		blue1.setName(&quot;Blue 1&quot;);</span>
+<span class="nc" id="L22">        blue1.setColorGroup(&quot;blue&quot;);</span>
+<span class="nc" id="L23">		blue2.setName(&quot;Blue 2&quot;);</span>
+<span class="nc" id="L24">        blue2.setColorGroup(&quot;blue&quot;);</span>
+<span class="nc" id="L25">		blue3.setName(&quot;Blue 3&quot;);</span>
+<span class="nc" id="L26">        blue3.setColorGroup(&quot;blue&quot;);</span>
+<span class="nc" id="L27">		green1.setName(&quot;Green 1&quot;);</span>
+<span class="nc" id="L28">        green1.setColorGroup(&quot;green&quot;);</span>
+<span class="nc" id="L29">		green2.setName(&quot;Green 2&quot;);</span>
+<span class="nc" id="L30">        green2.setColorGroup(&quot;green&quot;);</span>
+<span class="nc" id="L31">		green3.setName(&quot;Green 3&quot;);</span>
+<span class="nc" id="L32">        green3.setColorGroup(&quot;green&quot;);</span>
+<span class="nc" id="L33">		red1.setName(&quot;Red 1&quot;);</span>
+<span class="nc" id="L34">        red1.setColorGroup(&quot;red&quot;);</span>
+<span class="nc" id="L35">		red2.setName(&quot;Red 2&quot;);</span>
+<span class="nc" id="L36">        red2.setColorGroup(&quot;red&quot;);</span>
+<span class="nc" id="L37">		red3.setName(&quot;Red 3&quot;);</span>
+<span class="nc" id="L38">        red3.setColorGroup(&quot;red&quot;);</span>
+<span class="nc" id="L39">		purple1.setName(&quot;Purple 1&quot;);</span>
+<span class="nc" id="L40">        purple1.setColorGroup(&quot;purple&quot;);</span>
+<span class="nc" id="L41">		purple2.setName(&quot;Purple 2&quot;);		</span>
+<span class="nc" id="L42">        purple2.setColorGroup(&quot;purple&quot;);</span>
+<span class="nc" id="L43">		yellow1.setName(&quot;Yellow 1&quot;);</span>
+<span class="nc" id="L44">        yellow1.setColorGroup(&quot;yellow&quot;);</span>
+<span class="nc" id="L45">		yellow2.setName(&quot;Yellow 2&quot;);</span>
+<span class="nc" id="L46">        yellow2.setColorGroup(&quot;yellow&quot;);</span>
+		
+<span class="nc" id="L48">		blue1.setPrice(100);</span>
+<span class="nc" id="L49">		blue2.setPrice(100);</span>
+<span class="nc" id="L50">		blue3.setPrice(120);</span>
+<span class="nc" id="L51">		green1.setPrice(200);</span>
+<span class="nc" id="L52">		green2.setPrice(240);</span>
+<span class="nc" id="L53">		green3.setPrice(260);</span>
+<span class="nc" id="L54">		red1.setPrice(300);</span>
+<span class="nc" id="L55">		red2.setPrice(300);</span>
+<span class="nc" id="L56">		red3.setPrice(320);</span>
+<span class="nc" id="L57">		purple1.setPrice(340);</span>
+<span class="nc" id="L58">		purple2.setPrice(360);</span>
+<span class="nc" id="L59">		yellow1.setPrice(400);</span>
+<span class="nc" id="L60">		yellow2.setPrice(420);</span>
+		
+
+<span class="nc" id="L63">		blue1.setRent(10);</span>
+<span class="nc" id="L64">		blue2.setRent(10);</span>
+<span class="nc" id="L65">		blue3.setRent(12);</span>
+<span class="nc" id="L66">		green1.setRent(20);</span>
+<span class="nc" id="L67">		green2.setRent(24);</span>
+<span class="nc" id="L68">		green3.setRent(26);</span>
+<span class="nc" id="L69">		red1.setRent(30);</span>
+<span class="nc" id="L70">		red2.setRent(30);</span>
+<span class="nc" id="L71">		red3.setRent(32);</span>
+<span class="nc" id="L72">		purple1.setRent(34);</span>
+<span class="nc" id="L73">		purple2.setRent(36);</span>
+<span class="nc" id="L74">		yellow1.setRent(40);</span>
+<span class="nc" id="L75">		yellow2.setRent(42);</span>
+		
+<span class="nc" id="L77">		blue1.setHousePrice(30);</span>
+<span class="nc" id="L78">		blue2.setHousePrice(30);</span>
+<span class="nc" id="L79">		blue3.setHousePrice(30);</span>
+<span class="nc" id="L80">		green1.setHousePrice(40);</span>
+<span class="nc" id="L81">		green2.setHousePrice(40);</span>
+<span class="nc" id="L82">		green3.setHousePrice(40);</span>
+<span class="nc" id="L83">		red1.setHousePrice(50);</span>
+<span class="nc" id="L84">		red2.setHousePrice(50);</span>
+<span class="nc" id="L85">		red3.setHousePrice(50);</span>
+<span class="nc" id="L86">		purple1.setHousePrice(60);</span>
+<span class="nc" id="L87">		purple2.setHousePrice(60);</span>
+<span class="nc" id="L88">		yellow1.setHousePrice(70);</span>
+<span class="nc" id="L89">		yellow2.setHousePrice(70);</span>
+		
+<span class="nc" id="L91">		addCell(blue1);</span>
+<span class="nc" id="L92">		addCell(blue2);</span>
+<span class="nc" id="L93">		addCell(blue3);</span>
+<span class="nc" id="L94">		addCell(green1);</span>
+<span class="nc" id="L95">		addCell(green2);</span>
+<span class="nc" id="L96">		addCell(green3);</span>
+<span class="nc" id="L97">		addCell(red1);</span>
+<span class="nc" id="L98">		addCell(red2);</span>
+<span class="nc" id="L99">		addCell(red3);</span>
+<span class="nc" id="L100">		addCell(purple1);</span>
+<span class="nc" id="L101">		addCell(purple2);</span>
+<span class="nc" id="L102">		addCell(yellow1);</span>
+<span class="nc" id="L103">		addCell(yellow2);</span>
+<span class="nc" id="L104">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span>JUnitCore (21-sep-2020 14:17:49)</div></body></html>
