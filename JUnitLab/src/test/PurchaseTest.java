@@ -44,7 +44,7 @@ public class PurchaseTest {
 	@Test
 	public void testAddBasketDateNotNullAndNotEnoughStock() {
 		
-		try{
+		try{ 
 			int stock=2;
 			float price= (float) 2.5;
 			int quantity=10;
