@@ -78,14 +78,17 @@ public class Purchase {
 	 * @return the updated cost of the basket
 	 */
 	public double removeBasket(Article art, int q) {
+		System.out.println(purchasedDate + "dataRemove");
 		if (purchasedDate != null) {
 			throw new RuntimeException("The purchase	is	closed.	No	articles can be	removed");
 		}
 		PurchasedArticle purchasedArticle = basket.get(art);
 
+		
+		int purchasedQuantity = purchasedArticle.getQuantity();
 		if (purchasedArticle == null)
 			throw new RuntimeException("This product was	not	in	the	basket.");
-		int purchasedQuantity = purchasedArticle.getQuantity();
+		
 		if (purchasedQuantity < q)
 			throw new RuntimeException("You have not	too	much products.");
 		if (purchasedQuantity == q)

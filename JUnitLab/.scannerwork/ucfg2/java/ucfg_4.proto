@@ -1,0 +1,27 @@
+
+9domain.Purchase#getPurchaseIterator()Ljava/util/Iterator;D
+:C:/Users/MIKEL1/git/Bets/JUnitLab/src/domain/Purchase.java"# "(6"1*½
+1D
+:C:/Users/MIKEL1/git/Bets/JUnitLab/src/domain/Purchase.java#	 #(‰
+†
+D
+:C:/Users/MIKEL1/git/Bets/JUnitLab/src/domain/Purchase.java#	 #(
+%0java.util.HashMap"__id**
+domain.Purchase"
+basket¼¹
+D
+:C:/Users/MIKEL1/git/Bets/JUnitLab/src/domain/Purchase.java#	 #(
+%1java.util.Collection"0java.util.HashMap#values()Ljava/util/Collection;*
+
+%0java.util.HashMap2values()Â¿
+D
+:C:/Users/MIKEL1/git/Bets/JUnitLab/src/domain/Purchase.java#	 #(#
+%2java.util.Iterator"3java.util.Collection#iterator()Ljava/util/Iterator;*
+
+%1java.util.Collection2
+iterator()"b
+D
+:C:/Users/MIKEL1/git/Bets/JUnitLab/src/domain/Purchase.java# #($
+
+%2java.util.IteratorB
+domain.Purchase
