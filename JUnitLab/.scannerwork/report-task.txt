@@ -3,5 +3,5 @@ projectKey=mgalarza005_bets
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.12128
 dashboardUrl=https://sonarcloud.io/dashboard?id=mgalarza005_bets
-ceTaskId=AXSwpUY6fK6bUbsjBToP
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXSwpUY6fK6bUbsjBToP
+ceTaskId=AXSwy-I1v3iNU6xnaNxu
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXSwy-I1v3iNU6xnaNxu
