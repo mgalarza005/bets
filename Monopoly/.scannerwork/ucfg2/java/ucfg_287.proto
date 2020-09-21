@@ -1,0 +1,66 @@
+
+;edu.ncsu.monopoly.Player#checkProperty(Ljava/lang/String;)ZM
+CC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/Player.java8 8("5*«
+3M
+CC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/Player.java< <("W
+M
+CC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/Player.java< <(
+""*‘
+4M
+CC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/Player.java: :(¡
+ž
+M
+CC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/Player.java: :(
+%2java.util.ArrayList"__id*,**
+edu.ncsu.monopoly.Player"
+
+propertiesÅÂ
+M
+CC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/Player.java: :(&
+%3java.lang.Object",java.util.ArrayList#get(I)Ljava/lang/Object;*
+
+%2java.util.ArrayList*
+""2get(I)’
+
+M
+CC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/Player.java: :('
+celledu.ncsu.monopoly.Cell"__id*
+
+%3java.lang.ObjectËÈ
+M
+CC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/Player.java; ;(
+%4java.lang.String"2edu.ncsu.monopoly.Cell#getName()Ljava/lang/String;* 
+
+celledu.ncsu.monopoly.Cell2	getName()åâ
+M
+CC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/Player.java; ;(%
+%5boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+%4java.lang.String*
+
+propertyjava.lang.String2equals(Ljava/lang/Object;)*
+3
+5* 
+5M
+CC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/Player.java9 9(¡
+ž
+M
+CC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/Player.java9 9(
+%0java.util.ArrayList"__id*,**
+edu.ncsu.monopoly.Player"
+
+propertiesŸœ
+M
+CC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/Player.java9 9(!	
+%1int"java.util.ArrayList#size()I*
+
+%0java.util.ArrayList2size()*
+4
+1*«
+1M
+CC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/Player.java?	 ?("W
+M
+CC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/Player.java? ?(
+"":
+propertyjava.lang.StringB
+edu.ncsu.monopoly.Player

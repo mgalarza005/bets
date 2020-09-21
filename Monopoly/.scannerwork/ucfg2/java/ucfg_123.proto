@@ -1,0 +1,121 @@
+
+;edu.ncsu.monopoly.TradeDeal#makeMessage()Ljava/lang/String;P
+FC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/TradeDeal.java ("1*∑
+1P
+FC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/TradeDeal.java (#‚
+ﬂ
+P
+FC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/TradeDeal.java (."
+%0edu.ncsu.monopoly.GameMaster"Eedu.ncsu.monopoly.GameMaster#instance()Ledu/ncsu/monopoly/GameMaster;* "
+edu.ncsu.monopoly.GameMaster˙˜
+P
+FC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/TradeDeal.java (A
+%1edu.ncsu.monopoly.Player"Iedu.ncsu.monopoly.GameMaster#getCurrentPlayer()Ledu/ncsu/monopoly/Player;*$
+"
+%0edu.ncsu.monopoly.GameMaster2getCurrentPlayer()≥
+∞
+P
+FC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/TradeDeal.java (
+%2java.lang.String"__concat* 
+
+%1edu.ncsu.monopoly.Player*
+ wishes to purchase ¶
+£
+P
+FC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/TradeDeal.java	 (
+%3java.lang.String"__id*1*/
+edu.ncsu.monopoly.TradeDeal"
+propertyName´
+®
+P
+FC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/TradeDeal.java (
+%4java.lang.String"__concat*
+
+%2java.lang.String*
+
+%3java.lang.Stringù
+ö
+P
+FC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/TradeDeal.java ( 
+%5java.lang.String"__concat*
+
+%4java.lang.String*
+
+ from ‚
+ﬂ
+P
+FC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/TradeDeal.java	 ("
+%6edu.ncsu.monopoly.GameMaster"Eedu.ncsu.monopoly.GameMaster#instance()Ledu/ncsu/monopoly/GameMaster;* "
+edu.ncsu.monopoly.GameMasterˆÛ
+P
+FC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/TradeDeal.java	 (5
+%7edu.ncsu.monopoly.Player"Cedu.ncsu.monopoly.GameMaster#getPlayer(I)Ledu/ncsu/monopoly/Player;*$
+"
+%6edu.ncsu.monopoly.GameMaster*
+""2getPlayer(I)≥
+∞
+P
+FC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/TradeDeal.java (5
+%8java.lang.String"__concat*
+
+%5java.lang.String* 
+
+%7edu.ncsu.monopoly.Playerú
+ô
+P
+FC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/TradeDeal.java (
+%9java.lang.String"__concat*
+
+%8java.lang.String*	
+ for ö
+ó
+P
+FC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/TradeDeal.java (
+%10java.lang.String"__concat*
+
+%9java.lang.String*
+""ú
+ô
+P
+FC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/TradeDeal.java (!
+%11java.lang.String"__concat*
+
+%10java.lang.String*
+.  „
+‡
+P
+FC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/TradeDeal.java	 (#
+%12edu.ncsu.monopoly.GameMaster"Eedu.ncsu.monopoly.GameMaster#instance()Ledu/ncsu/monopoly/GameMaster;* "
+edu.ncsu.monopoly.GameMaster¯ı
+P
+FC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/TradeDeal.java	 (5
+%13edu.ncsu.monopoly.Player"Cedu.ncsu.monopoly.GameMaster#getPlayer(I)Ledu/ncsu/monopoly/Player;*%
+#
+%12edu.ncsu.monopoly.GameMaster*
+""2getPlayer(I)∂
+≥
+P
+FC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/TradeDeal.java (5
+%14java.lang.String"__concat*
+
+%11java.lang.String*!
+
+%13edu.ncsu.monopoly.Playeræ
+ª
+P
+FC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/TradeDeal.java (0
+%15java.lang.String"__concat*
+
+%14java.lang.String*)'
+%, do you wish to trade your property?ì
+ê
+P
+FC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/TradeDeal.java (1
+messagejava.lang.String"__id*
+
+%15java.lang.String"q
+P
+FC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/TradeDeal.java (
+
+messagejava.lang.StringB
+edu.ncsu.monopoly.TradeDeal

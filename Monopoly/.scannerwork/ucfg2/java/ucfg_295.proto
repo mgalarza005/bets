@@ -1,0 +1,24 @@
+
+Gedu.ncsu.monopoly.Player#getProperty(I)Ledu/ncsu/monopoly/PropertyCell;O
+CC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/Player.javaƒ ƒ( "1*±
+1O
+CC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/Player.java„ „(!£
+ 
+O
+CC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/Player.java„ „(!
+%0java.util.ArrayList"__id*,**
+edu.ncsu.monopoly.Player"
+
+propertiesÇÄ
+O
+CC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/Player.java„ „(,
+%1java.lang.Object",java.util.ArrayList#get(I)Ljava/lang/Object;*
+
+%0java.util.ArrayList*
+""2get(I)"k
+O
+CC:/Users/MIKEL1/git/Bets/Monopoly/src/edu/ncsu/monopoly/Player.java„ „(-
+
+%1java.lang.Object:
+""B
+edu.ncsu.monopoly.Player

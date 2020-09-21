@@ -1,0 +1,7 @@
+organization=mgalarza005
+projectKey=mgalarza005_bets
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.12128
+dashboardUrl=https://sonarcloud.io/dashboard?id=mgalarza005_bets
+ceTaskId=AXSwn0EBSvSje_i3HFSU
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXSwn0EBSvSje_i3HFSU
