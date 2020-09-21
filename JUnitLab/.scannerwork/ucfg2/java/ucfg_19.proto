@@ -1,16 +1,9 @@
 
-1domain.Article#getDescription()Ljava/lang/String;C
-9C:/Users/MIKEL1/git/Bets/JUnitLab/src/domain/Article.java' '("1*·
+domain.Article#getPrice()FC
+9C:/Users/MIKEL1/git/Bets/JUnitLab/src/domain/Article.java ("1*—
 1C
-9C:/Users/MIKEL1/git/Bets/JUnitLab/src/domain/Article.java(	 ((‹
-ˆ
+9C:/Users/MIKEL1/git/Bets/JUnitLab/src/domain/Article.java	 ("M
 C
-9C:/Users/MIKEL1/git/Bets/JUnitLab/src/domain/Article.java(	 ((
-%0java.lang.String"__id*#*!
-domain.Article"
-description"_
-C
-9C:/Users/MIKEL1/git/Bets/JUnitLab/src/domain/Article.java( ((
-
-%0java.lang.StringB
+9C:/Users/MIKEL1/git/Bets/JUnitLab/src/domain/Article.java (
+""B
 domain.Article

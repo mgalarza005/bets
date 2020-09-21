@@ -338,14 +338,18 @@ setDate(I)java.util.Date#setDate(I)V3
 setSeconds(I)java.util.Date#setSeconds(I)Vf
 )writeObject(Ljava/io/ObjectOutputStream;)9java.util.Date#writeObject(Ljava/io/ObjectOutputStream;)V(
 
-getHours()java.util.Date#getHours()IË
-test.PurchaseTestjava.lang.ObjectS
-testAddBasket5NotEnoughStock()1test.PurchaseTest#testAddBasket5NotEnoughStock()V7
-testAddBasket1()#test.PurchaseTest#testAddBasket1()V'
-<init>()test.PurchaseTest#<init>()Ve
-'testAddBasket4PurchasedArticleNotNull():test.PurchaseTest#testAddBasket4PurchasedArticleNotNull()V7
-testAddBasket2()#test.PurchaseTest#testAddBasket2()VM
-testAddBasket3DateNotNull().test.PurchaseTest#testAddBasket3DateNotNull()VÛ
+getHours()java.util.Date#getHours()Iƒ
+test.PurchaseTestjava.lang.Object'
+<init>()test.PurchaseTest#<init>()Vc
+&testRemoveBasketPurchasedArticleNull()9test.PurchaseTest#testRemoveBasketPurchasedArticleNull()Ve
+'testAddBasket4PurchasedArticleNotNull():test.PurchaseTest#testAddBasket4PurchasedArticleNotNull()Va
+%testRemoveBasketPurchaseDateNotNull()8test.PurchaseTest#testRemoveBasketPurchaseDateNotNull()VU
+testAddRemoveQuantityHandiago()2test.PurchaseTest#testAddRemoveQuantityHandiago()V7
+testAddBasket2()#test.PurchaseTest#testAddBasket2()Vg
+(testRemoveBasketPurchaseArticleNotNull();test.PurchaseTest#testRemoveBasketPurchaseArticleNotNull()Vi
+)testRemoveBasketPurchaseQuantityBerdina()<test.PurchaseTest#testRemoveBasketPurchaseQuantityBerdina()VM
+testAddBasket3DateNotNull().test.PurchaseTest#testAddBasket3DateNotNull()VQ
+testAddRemoveQuantityBerdin()0test.PurchaseTest#testAddRemoveQuantityBerdin()VÛ
 java.sql.Datejava.util.DateW
 valueOf(Ljava/lang/String;)8java.sql.Date#valueOf(Ljava/lang/String;)Ljava/sql/Date;;
 toInstant(),java.sql.Date#toInstant()Ljava/time/Instant;A

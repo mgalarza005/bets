@@ -1,9 +1,16 @@
 
-#domain.PurchasedArticle#getPrice()FL
-BC:/Users/MIKEL1/git/Bets/JUnitLab/src/domain/PurchasedArticle.java# #("1*©
+0domain.PurchasedArticle#getArt()Ldomain/Article;L
+BC:/Users/MIKEL1/git/Bets/JUnitLab/src/domain/PurchasedArticle.java ("1*œ
 1L
-BC:/Users/MIKEL1/git/Bets/JUnitLab/src/domain/PurchasedArticle.java$	 $("V
+BC:/Users/MIKEL1/git/Bets/JUnitLab/src/domain/PurchasedArticle.java	 (ì
+ê
 L
-BC:/Users/MIKEL1/git/Bets/JUnitLab/src/domain/PurchasedArticle.java$ $(
-""B
+BC:/Users/MIKEL1/git/Bets/JUnitLab/src/domain/PurchasedArticle.java	 (
+%0domain.Article"__id*$*"
+domain.PurchasedArticle"
+art"f
+L
+BC:/Users/MIKEL1/git/Bets/JUnitLab/src/domain/PurchasedArticle.java (
+
+%0domain.ArticleB
 domain.PurchasedArticle
