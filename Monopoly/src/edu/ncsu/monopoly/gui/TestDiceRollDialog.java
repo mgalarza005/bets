@@ -57,16 +57,20 @@ public class TestDiceRollDialog extends JDialog {
                 if(amount > 0) {
 	                diceRoll = new int[2];
 	                if((amount % 2) == 0) {
-	                	diceRoll[0] = amount / 2;
-	                	diceRoll[1] = amount / 2;
+	                	diceRoll[0] = amountZatiBi(amount);
+	                	diceRoll[1] = amountZatiBi(amount);
 	                }
 	                else {
-	                	diceRoll[0] = amount / 2;
-	                	diceRoll[1] = (amount / 2) + 1;
+	                	diceRoll[0] = amountZatiBi(amount);
+	                	diceRoll[1] = amountZatiBi(amount) + 1;
 	                }
                 }
                 hide();
             }
+
+			private int amountZatiBi(int amount) {
+				return amount / 2;
+			}
         });
         
         this.pack();

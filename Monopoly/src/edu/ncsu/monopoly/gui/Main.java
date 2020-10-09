@@ -5,11 +5,12 @@ import javax.swing.JOptionPane;
 import edu.ncsu.monopoly.*;
 
 public class Main {
-
+	private static final String enterNumberOfPlayerText = "Please input a number between one and eight";
 	private static int inputNumberOfPlayers(MainWindow window) {
 		int numPlayers = 0;
 		while(numPlayers <= 0 || numPlayers > GameMaster.MAX_PLAYER) {
 			String numberOfPlayers = JOptionPane.showInputDialog(window, "How many players");
+			
 			if(numberOfPlayers == null) {
 				System.exit(0);
 			}
@@ -19,7 +20,8 @@ public class Main {
 				JOptionPane.showMessageDialog(window, "Please input a number");
 			}
 			if (numPlayers <= 0 || numPlayers > GameMaster.MAX_PLAYER) {
-				JOptionPane.showMessageDialog(window, "Please input a number between one and eight");
+				
+				JOptionPane.showMessageDialog(window, enterNumberOfPlayerText);
 			} else {
 				GameMaster.instance().setNumberOfPlayers(numPlayers);
 			}

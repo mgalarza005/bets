@@ -97,8 +97,7 @@ public class MainWindow extends JFrame implements MonopolyGUI{
 	}
 
     public boolean isDrawCardButtonEnabled() {
-        int currentPlayerIndex = GameMaster.instance().getCurrentPlayerIndex();
-        return playerPanels[currentPlayerIndex].isDrawCardButtonEnabled();
+        return playerPanels[GameMaster.instance().getCurrentPlayerIndex()].isDrawCardButtonEnabled();
     }
 
     public boolean isEndTurnButtonEnabled() {

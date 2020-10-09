@@ -246,17 +246,17 @@ public class DataAccess  {
 	}
 
 	
-		public boolean isLoginAdmin(String log, String pass) {
-			System.out.println(log +" "+ pass);
-			Admin amaia= db.find(Admin.class, log);
-			if(amaia == null) {
-				return false;
-			}else {
-				if(amaia.getPass().compareTo(pass)==0)
-					return true;
-			}
-			return false;		
+	public boolean isLoginAdmin(String log, String pass) {
+		System.out.println(log +" "+ pass);
+		Admin amaia= db.find(Admin.class, log);
+		if(amaia == null) {
+			return false;
+		}else {
+			if(amaia.getPass().compareTo(pass)==0)
+				return true;
 		}
+		return false;		
+	}
 	
 	
 	

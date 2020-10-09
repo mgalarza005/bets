@@ -355,8 +355,7 @@ public class DataAccess  {
 		TypedQuery<Kuota> query= db.createQuery("DELETE FROM Kuota k WHERE k.kuotaNumber=?1",Kuota.class);
 		query.setParameter(1, zk);
 		query.executeUpdate();
-//		Kuota aux= db.find(Kuota.class, ezabatzekoKuota.getKNumber());
-//		db.remove(aux);
+
 		db.getTransaction().commit();
 		System.err.println("Kuota ezabatu da.");
 	}
@@ -617,22 +616,6 @@ public class DataAccess  {
 		db.getTransaction().commit();
 
 	}
-//	public void kalkulatuDiruaAnizkoitza(Kuota k1) {
-//		db.getTransaction().begin();
-//		Kuota k = db.find(Kuota.class, k1);
-//		User u;
-//		for(int i=0;i<k.getApuestuLista().size();i++) {
-//			if(k.getApuestuLista().get(i).getDirukop() == 0.0) {
-//				u=k1.getApuestuLista().get(i).getU();
-//				
-//							
-//						}
-//						
-//					}
-//					
-//				}
-//			}
-//		}
 		
 	public void apustuaGorde(String usr, double d, Kuota k) {
 		db.getTransaction().begin();

@@ -5,6 +5,7 @@ public class MovePlayerCard extends Card {
     
     private String destination;
     private int type;
+	private Player currentPlayer;
 
     public MovePlayerCard(String destination, int cardType) {
         this.destination = destination;
@@ -12,7 +13,7 @@ public class MovePlayerCard extends Card {
     }
 
     public void applyAction() {
-        Player currentPlayer = GameMaster.instance().getCurrentPlayer();
+        currentPlayer = GameMaster.instance().getCurrentPlayer();
         Cell currentPosition = currentPlayer.getPosition();
         int newCell = GameMaster.instance().getGameBoard().queryCellIndex(destination);
         int currentCell = GameMaster.instance().getGameBoard().queryCellIndex(currentPosition.getName());
